@@ -21,7 +21,7 @@ const items = [
     altText: 'C#',
     title: 'C#',
     caption: 'IIS, Mssql, .Net, Mvc, Wpf',
-    link: 'http://mb11.info'
+    link: 'https://mb11.info'
   },
   {
     name: 'd',
@@ -29,7 +29,7 @@ const items = [
     altText: 'Design',
     title: 'Design',
     caption: 'Responsive, Photoshop, 3d Modeling',
-    link: 'http://mb11.info/design/gallery.html'
+    link: 'https://mb11.info/design/gallery.html'
   },
   {
     name: 'j',
@@ -37,7 +37,7 @@ const items = [
     altText: 'Javascript',
     caption: 'Async, ES6, Jquery, PWAs, Canvas, WebGL',
     title: 'Javascript',
-    link: 'http://mb11.info/chapp'
+    link: 'https://mb11.info/chapp'
   }
 ];
 
