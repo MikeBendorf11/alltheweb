@@ -1,0 +1,75 @@
+{
+  "modules": {
+    "byIdentifier": {
+      "external \"react\"": 0,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/items.js": 1,
+      "external \"reactstrap\"": 2,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/Popup.js": 3,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/Slides.js": 4,
+      "external \"next/router\"": 5,
+      "external \"next/head\"": 6,
+      "multi ./pages/index.js": 7,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/index.js": 8,
+      "node_modules/ignore-loader/index.js!static/bootstrap.min.css": 9,
+      "node_modules/ignore-loader/index.js!static/style.css": 10,
+      "multi ./pages/items.js": 11,
+      "multi ./pages/Popup.js": 12,
+      "multi ./pages/Slides.js": 13,
+      "multi node_modules/next/dist/pages/_app.js": 14,
+      "node_modules/next/dist/pages/_app.js": 15,
+      "external \"next/app\"": 16,
+      "multi node_modules/next/dist/pages/_error.js": 17,
+      "node_modules/next/dist/pages/_error.js": 18,
+      "external \"next/error\"": 19,
+      "multi node_modules/next/dist/pages/_document.js": 20,
+      "node_modules/next/dist/pages/_document.js": 21,
+      "external \"next/document\"": 22
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16,
+      "17": 17,
+      "18": 18,
+      "19": 19,
+      "20": 20,
+      "21": 21,
+      "22": 22
+    }
+  },
+  "chunks": {
+    "byName": {
+      "static\\2OJKXVH~jfw_wqyc_EfXY\\pages\\index.js": 0,
+      "static\\2OJKXVH~jfw_wqyc_EfXY\\pages\\items.js": 1,
+      "static\\2OJKXVH~jfw_wqyc_EfXY\\pages\\Popup.js": 2,
+      "static\\2OJKXVH~jfw_wqyc_EfXY\\pages\\Slides.js": 3,
+      "static\\2OJKXVH~jfw_wqyc_EfXY\\pages\\_app.js": 4,
+      "static\\2OJKXVH~jfw_wqyc_EfXY\\pages\\_error.js": 5,
+      "static\\2OJKXVH~jfw_wqyc_EfXY\\pages\\_document.js": 6
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  }
+}

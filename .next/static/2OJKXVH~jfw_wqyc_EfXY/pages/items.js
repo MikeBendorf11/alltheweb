@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{233:function(n,e,o){__NEXT_REGISTER_PAGE("/items",function(){return n.exports=o(4),{page:n.exports.default}})}},[[233,1,0]]]);
