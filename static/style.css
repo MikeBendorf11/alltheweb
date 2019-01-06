@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+
+html{
+  
+}
+
+body{
+
+  overflow: hidden;
+}
+#container{
+  
+  position: absolute;
+  top: 0; left: 0;
+  /* margin-top: 16%; */
+  
+  /* justify-content: center;
+  align-items: center; */
+  min-height: 100vh;
+  max-height: 100vh;
+  display: grid;
+  grid-template-columns: 17fr 66fr 17fr;
+  grid-template-rows: 20fr 68fr 12fr;
+  /* grid-template-rows: 19.2% 68% 12.8%; */
+  grid-template-areas: 
+  'top top top'
+  'left carousel right'
+  'bottom bottom bottom';
+  border-radius: 25px;
+  
+}
+
+.carousel{
+  grid-area: carousel;
+  background-color: grey;  
+  border-radius: 25px;
+  box-shadow: 0 0 60px 5px black;
+}
+.carousel-caption h3{
+  font-family: 'Audiowide', cursive;  
+  font-size: 7vw;
+  text-shadow: 5px 5px 10px black;
+}
+.carousel-caption p{
+  font-size: 4vh;
+  background-image: linear-gradient(to right, rgba(162, 0, 255, 0) , blue, rgb(47, 0, 255),blue, rgba(162, 0, 255, 0));
+  text-shadow: -1px -1px 2px black;
+  
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+  width: 40px;
+  height: 40px;
+  filter: invert(100%)
+}  
+
+img{
+   width: 100%; 
+   height: 68vh;
+   border-radius: 20px;
+   
+   filter: brightness(60%)
+}
+img:hover, .carousel-caption:hover{
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+.d-md-block {
+    display: block !important;
+    }
+}
+
+#top{grid-area: top}
+#left{grid-area: left}
+#right{grid-area: right}
+#bottom{ grid-area: bottom}
+
+.modal-lg {
+  max-width:unset;
+  margin: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.modal-header{
+  padding: 0 0 0 10px;
+}
+iframe{
+  width: 100vw;
+  height: 95vh;
+}
+
+.close {
+  font-size: 2rem;
+  margin-right: 28px;
+}
