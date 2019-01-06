@@ -1,44 +1,27 @@
 {
-  "devFiles": [],
+  "devFiles": [
+    "static/development/dll/dll_0a5735af42686c2a38b2.js"
+  ],
   "pages": {
-    "/index": [
-      "static/runtime/webpack-89179faa512dd01fbb62.js",
-      "static/chunks/commons.717052b67117d09e0890.js",
-      "static/css/styles.f6bcebe6.chunk.css",
-      "static/chunks/styles.15ccca13bc45f1c9efc5.js",
-      "static/runtime/main-7db03a584a56405b1622.js"
-    ],
-    "/items": [
-      "static/runtime/webpack-89179faa512dd01fbb62.js",
-      "static/chunks/commons.717052b67117d09e0890.js",
-      "static/runtime/main-7db03a584a56405b1622.js"
-    ],
-    "/Popup": [
-      "static/runtime/webpack-89179faa512dd01fbb62.js",
-      "static/chunks/commons.717052b67117d09e0890.js",
-      "static/runtime/main-7db03a584a56405b1622.js"
-    ],
-    "/Slides": [
-      "static/runtime/webpack-89179faa512dd01fbb62.js",
-      "static/chunks/commons.717052b67117d09e0890.js",
-      "static/runtime/main-7db03a584a56405b1622.js"
-    ],
     "/_app": [
-      "static/runtime/webpack-89179faa512dd01fbb62.js",
-      "static/chunks/commons.717052b67117d09e0890.js",
-      "static/runtime/main-7db03a584a56405b1622.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/_error": [
-      "static/runtime/webpack-89179faa512dd01fbb62.js",
-      "static/chunks/commons.717052b67117d09e0890.js",
-      "static/runtime/main-7db03a584a56405b1622.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/index": [
+      "static/runtime/webpack.js",
+      "static/css/styles.chunk.css",
+      "static/chunks/styles.js",
+      "static/runtime/main.js"
     ],
     "/": [
-      "static/runtime/webpack-89179faa512dd01fbb62.js",
-      "static/chunks/commons.717052b67117d09e0890.js",
-      "static/css/styles.f6bcebe6.chunk.css",
-      "static/chunks/styles.15ccca13bc45f1c9efc5.js",
-      "static/runtime/main-7db03a584a56405b1622.js"
+      "static/runtime/webpack.js",
+      "static/css/styles.chunk.css",
+      "static/chunks/styles.js",
+      "static/runtime/main.js"
     ]
   }
 }

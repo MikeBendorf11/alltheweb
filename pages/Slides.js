@@ -6,6 +6,7 @@ import {
   CarouselControl,
   CarouselCaption
 } from 'reactstrap';
+import Tooltip from './Tooltip';
 
 class Slides extends Component {
   constructor(props) {
@@ -80,6 +81,15 @@ class Slides extends Component {
           onExiting={this.onExiting}
           onExited={this.onExited}
           key={item.src}>
+          <Tooltip 
+            position={'top'}
+            current={'img-' + item.name}
+            text={'Click to open the app'} />
+          <Tooltip
+            position={'bottom'}
+            current={'cap-' + item.name}
+            text={'Click to open the app'} />
+            
           <img
             onClick={this.handleClick.bind(this, item.name)} src={item.src}
             alt={item.altText}
@@ -105,10 +115,10 @@ class Slides extends Component {
           pause={"hover"}
           ride={'carousel'}
         >
-          
-          {slides}
-          <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
-          <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
+
+        {slides}
+          <CarouselControl id="controlR" direction="prev" directionText="Previous" onClickHandler={this.previous} />
+          <CarouselControl id="controlL" direction="next" directionText="Next" onClickHandler={this.next} />
         </Carousel>
     );
   }

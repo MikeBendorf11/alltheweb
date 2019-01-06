@@ -55,8 +55,11 @@ body{
 .carousel-control-prev-icon, .carousel-control-next-icon{
   width: 40px;
   height: 40px;
-  filter: invert(100%)
+  
 }  
+.carousel-control-next, .carousel-control-prev {
+  opacity: .8;
+}
 
 img{
    width: 100%; 
@@ -92,11 +95,14 @@ img:hover, .carousel-caption:hover{
 iframe{
   width: 100vw;
   height: 95vh;
+  
 }
 
 .close {
   font-size: 2rem;
   margin-right: 28px;
 }
+
+
 
 /*# sourceMappingURL=styles.chunk.css.map*/

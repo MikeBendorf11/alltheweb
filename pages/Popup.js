@@ -11,9 +11,11 @@ class Popup extends Component {
   constructor(props) {
     super(props);
     this.toggle = this.toggle.bind(this);
+    
   }
 
   toggle(event) {
+    
     this.props.activatePop(event)
   } 
   render() {
@@ -29,9 +31,11 @@ class Popup extends Component {
     items.forEach(i=>{
       i.name == id? url = i.link : null;
     })
-    //console.log(url);
+
+
     return (
         <Modal
+        
           isOpen={this.props.isActive}
           toggle={this.toggle}
           className={this.props.className}
@@ -40,7 +44,21 @@ class Popup extends Component {
           <ModalHeader toggle={this.toggle}>
             <a href={url} target="_new"> {url}</a>
           </ModalHeader>
-          <iframe src={url}></iframe>
+          <iframe
+            id="ifr"
+            src={url}>
+          </iframe>
+          <style jsx global>
+     {   `
+        iframe{
+          
+          background-color: white;
+          background-position: 50% 50%;
+          background-size: 200px;
+          background-repeat: no-repeat;
+        }
+        `}
+      </style>
         </Modal>
     );
   }

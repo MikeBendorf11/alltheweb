@@ -5,26 +5,28 @@ import '../static/bootstrap.min.css';
 import '../static/style.css';
 import Popup from './Popup';  
 import Slides from './Slides';
-
+import Tooltip from './Tooltip';
 
 class Index extends Component {
   constructor(props) {
     super(props);
     this.state = { 
       isPopActive: false,
-      slideInterval: 15000,
+      slideInterval: 3000,
       clickedSlide: ''
      };
     this.onSlideClick = this.onSlideClick.bind(this);
     this.activatePop = this.activatePop.bind(this);
   }
   componentDidMount(){
+    
 
     /* Adaptive layout using Grid and percentages/fractions */
     var cont = document.querySelector('#container');
     var images = document.querySelectorAll('.images');
 
     window.onload = ()=> {
+      //document.body.id = 'theBody';
       var currentWidth = window.innerWidth;
       var currentHeight = window.innerHeight;
       var maxWidth = 1280;
@@ -123,6 +125,14 @@ class Index extends Component {
     
   }
   onSlideClick(id) {
+    setTimeout(()=>{
+      var theIfr = document.querySelector('#ifr');
+      console.log(theIfr)  
+      if(theIfr){
+        theIfr.style.backgroundImage = `url(static/gifs/loading2.gif?r=${new Date().getTime()})`
+      }
+    },1000)
+    
     this.setState({ 
       isPopActive: !this.state.isPopActive,
       slideInterval: false,
@@ -130,9 +140,10 @@ class Index extends Component {
     })
   }
   activatePop(event) {
+    
     this.setState({ 
       isPopActive: !this.state.isPopActive,
-      slideInterval: 15000
+      slideInterval: 3000
     })
   }
 
@@ -149,6 +160,8 @@ class Index extends Component {
           <script src="static/3dmodel/WebGL.js"></script>
         </Head>
         {/* <p>{this.props.router.query.or}</p> */}
+        {/* <div id='theBody'></div> */}
+        
         <Slides 
           onSlideClick={this.onSlideClick} 
           interval={this.state.slideInterval} 
@@ -157,12 +170,28 @@ class Index extends Component {
           activatePop={this.activatePop} 
           isActive={this.state.isPopActive} 
           content={this.state.clickedSlide}/>
-          <div id="top"></div>
-          <div id="left"></div>
-          <div id="right"></div>
+          <div id="top">
+          <Tooltip 
+            text={'Drag or scroll this background'}
+            position={'left'}
+            current={'top'}/>
+          </div>
+          <div id="left">
+            <Tooltip 
+              text={'Drag or scroll this background'}
+              position={'bottom'}
+              current={'left'}/>
+          </div>
+          <div id="right">
+            <Tooltip 
+              text={'Drag or scroll this background'}
+              position={'bottom'}
+              current={'right'}/> 
+          </div>
           <div id="bottom"></div>
+
       </div>
-      
+
     )
   }
 }
