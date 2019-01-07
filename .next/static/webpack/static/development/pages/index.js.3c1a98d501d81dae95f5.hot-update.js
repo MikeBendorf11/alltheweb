@@ -64,7 +64,7 @@ function (_Component) {
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Index).call(this, props));
     _this.state = {
       isPopActive: false,
-      slideInterval: 5000,
+      slideInterval: 3000,
       clickedSlide: ''
     };
     _this.onSlideClick = _this.onSlideClick.bind(_assertThisInitialized(_assertThisInitialized(_this)));
@@ -79,7 +79,7 @@ function (_Component) {
       var cont = document.querySelector('#container');
       var images = document.querySelectorAll('.images');
 
-      window.onload = function () {
+      function windowChange() {
         //document.body.id = 'theBody';
         var currentWidth = window.innerWidth;
         var currentHeight = window.innerHeight;
@@ -110,6 +110,14 @@ function (_Component) {
         images.forEach(function (img) {
           img.style.height = "".concat(69 - midPercent, "vh");
         });
+      }
+
+      window.onload = function () {
+        windowChange();
+      };
+
+      window.onresize = function () {
+        windowChange();
       };
       /*WebGL module */
 
@@ -198,7 +206,7 @@ function (_Component) {
     value: function activatePop(event) {
       this.setState({
         isPopActive: !this.state.isPopActive,
-        slideInterval: 5000
+        slideInterval: 3000
       });
     }
   }, {
@@ -208,19 +216,19 @@ function (_Component) {
         id: "container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 152
+          lineNumber: 157
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 153
+          lineNumber: 158
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("title", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 154
+          lineNumber: 159
         },
         __self: this
       }, "Portfolio"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
@@ -228,35 +236,35 @@ function (_Component) {
         content: "initial-scale=1.0, width=device-width",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 155
+          lineNumber: 160
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         src: "static/3dmodel/three.js",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 157
+          lineNumber: 162
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         src: "static/3dmodel/OrbitControls.js",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 158
+          lineNumber: 163
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         src: "static/3dmodel/GLTFLoader.js",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 159
+          lineNumber: 164
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         src: "static/3dmodel/WebGL.js",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 160
+          lineNumber: 165
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Slides__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -265,7 +273,7 @@ function (_Component) {
         order: this.props.router.query.or,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 165
+          lineNumber: 170
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Popup__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -274,30 +282,30 @@ function (_Component) {
         content: this.state.clickedSlide,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 169
+          lineNumber: 174
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         id: "top",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 173
+          lineNumber: 178
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Tooltip__WEBPACK_IMPORTED_MODULE_7__["default"], {
-        text: 'Drag, or scroll this background',
+        text: 'Drag or scroll this background',
         position: 'left',
         current: 'top',
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 174
+          lineNumber: 179
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         id: "left",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 179
+          lineNumber: 184
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Tooltip__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -306,30 +314,30 @@ function (_Component) {
         current: 'left',
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 180
+          lineNumber: 185
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         id: "right",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 185
+          lineNumber: 190
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Tooltip__WEBPACK_IMPORTED_MODULE_7__["default"], {
-        text: 'Click & drag, or scroll this background',
+        text: 'Drag or scroll this background',
         position: 'bottom',
         current: 'right',
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 186
+          lineNumber: 191
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         id: "bottom",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 191
+          lineNumber: 196
         },
         __self: this
       }));
@@ -364,4 +372,4 @@ var Extract = Object(next_router__WEBPACK_IMPORTED_MODULE_0__["withRouter"])(Ind
 /***/ })
 
 })
-//# sourceMappingURL=index.js.6d0f8f1a9760e2fb6cbc.hot-update.js.map
+//# sourceMappingURL=index.js.3c1a98d501d81dae95f5.hot-update.js.map

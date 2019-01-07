@@ -24,8 +24,7 @@ class Index extends Component {
     /* Adaptive layout using Grid and percentages/fractions */
     var cont = document.querySelector('#container');
     var images = document.querySelectorAll('.images');
-
-    window.onload = ()=> {
+    function windowChange(){
       //document.body.id = 'theBody';
       var currentWidth = window.innerWidth;
       var currentHeight = window.innerHeight;
@@ -62,6 +61,12 @@ class Index extends Component {
       images.forEach(img => {
         img.style.height = `${(69-midPercent)}vh`  
       });
+    }
+    window.onload = ()=> {
+      windowChange()
+    }
+    window.onresize = ()=>{
+      windowChange()
     }
     /*WebGL module */
     if ( WEBGL.isWebGLAvailable() === false ) {
