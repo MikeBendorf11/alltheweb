@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 import Head from 'next/head';
 import '../static/bootstrap.min.css';
 import '../static/style.css';
-import Popup from './Popup';  
-import Slides from './Slides';
-import Tooltip from './Tooltip';
+import Popup from '../components/Popup';  
+import Slides from '../components/Slides';
+import Tooltip from '../components/Tooltip';
 
 class Index extends Component {
   constructor(props) {

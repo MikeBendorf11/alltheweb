@@ -93,10 +93,10 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
-/***/ "./pages/Popup.js":
-/*!************************!*\
-  !*** ./pages/Popup.js ***!
-  \************************/
+/***/ "./components/Popup.js":
+/*!*****************************!*\
+  !*** ./components/Popup.js ***!
+  \*****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -108,8 +108,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactstrap */ "reactstrap");
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _items__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./items */ "./pages/items.js");
-var _jsxFileName = "C:\\Users\\mb8user\\Desktop\\Portolio-Compiled2\\pages\\Popup.js";
+/* harmony import */ var _items__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./items */ "./components/items.js");
+var _jsxFileName = "C:\\Users\\mb8user\\Desktop\\Portolio-Compiled2\\components\\Popup.js";
 
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -205,7 +205,7 @@ function (_Component) {
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
         styleId: "1527947274",
-        css: "iframe{background-color:white;background-position:50% 50%;background-size:200px;background-repeat:no-repeat;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcbWI4dXNlclxcRGVza3RvcFxcUG9ydG9saW8tQ29tcGlsZWQyXFxwYWdlc1xcUG9wdXAuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBbURTLEFBSWtDLHVCQUNLLDRCQUNOLHNCQUNNLDRCQUM5QiIsImZpbGUiOiJDOlxcVXNlcnNcXG1iOHVzZXJcXERlc2t0b3BcXFBvcnRvbGlvLUNvbXBpbGVkMlxccGFnZXNcXFBvcHVwLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7IENvbXBvbmVudCB9IGZyb20gJ3JlYWN0JztcclxuaW1wb3J0IHtcclxuICBCdXR0b24sXHJcbiAgTW9kYWxIZWFkZXIsXHJcbiAgTW9kYWwsXHJcbiAgTW9kYWxCb2R5LFxyXG59IGZyb20gJ3JlYWN0c3RyYXAnO1xyXG5pbXBvcnQgaXRlbXMgZnJvbSAnLi9pdGVtcyc7XHJcblxyXG5jbGFzcyBQb3B1cCBleHRlbmRzIENvbXBvbmVudCB7XHJcbiAgY29uc3RydWN0b3IocHJvcHMpIHtcclxuICAgIHN1cGVyKHByb3BzKTtcclxuICAgIHRoaXMudG9nZ2xlID0gdGhpcy50b2dnbGUuYmluZCh0aGlzKTtcclxuICAgIFxyXG4gIH1cclxuXHJcbiAgdG9nZ2xlKGV2ZW50KSB7XHJcbiAgICBcclxuICAgIHRoaXMucHJvcHMuYWN0aXZhdGVQb3AoZXZlbnQpXHJcbiAgfSBcclxuICByZW5kZXIoKSB7XHJcbiAgICBcclxuICAgIGxldCB1cmw7XHJcbiAgICBsZXQgaWQgPSB0aGlzLnByb3BzLmNvbnRlbnQ7XHJcbiAgICBcclxuICAgIC8vIGlmKGlkKXtcclxuICAgIC8vICAgaWQgPSBpZC5zcGxpdCgnLScpWzFdICAgIFxyXG4gICAgLy8gICBcclxuICAgIC8vIH1cclxuICAgIC8vY29uc29sZS5sb2coJ2lkOicgKyBpZCk7XHJcbiAgICBpdGVtcy5mb3JFYWNoKGk9PntcclxuICAgICAgaS5uYW1lID09IGlkPyB1cmwgPSBpLmxpbmsgOiBudWxsO1xyXG4gICAgfSlcclxuXHJcblxyXG4gICAgcmV0dXJuIChcclxuICAgICAgICA8TW9kYWxcclxuICAgICAgICBcclxuICAgICAgICAgIGlzT3Blbj17dGhpcy5wcm9wcy5pc0FjdGl2ZX1cclxuICAgICAgICAgIHRvZ2dsZT17dGhpcy50b2dnbGV9XHJcbiAgICAgICAgICBjbGFzc05hbWU9e3RoaXMucHJvcHMuY2xhc3NOYW1lfVxyXG4gICAgICAgICAgc2l6ZT17J2xnJ31cclxuICAgICAgICAgIGlkPXsnZGlhbG9nLScgKyBpZH0+XHJcbiAgICAgICAgICA8TW9kYWxIZWFkZXIgdG9nZ2xlPXt0aGlzLnRvZ2dsZX0+XHJcbiAgICAgICAgICAgIDxhIGhyZWY9e3VybH0gdGFyZ2V0PVwiX25ld1wiPiB7dXJsfTwvYT5cclxuICAgICAgICAgIDwvTW9kYWxIZWFkZXI+XHJcbiAgICAgICAgICA8aWZyYW1lXHJcbiAgICAgICAgICAgIGlkPVwiaWZyXCJcclxuICAgICAgICAgICAgc3JjPXt1cmx9PlxyXG4gICAgICAgICAgPC9pZnJhbWU+XHJcbiAgICAgICAgICA8c3R5bGUganN4IGdsb2JhbD5cclxuICAgICB7ICAgYFxyXG4gICAgICAgIGlmcmFtZXtcclxuICAgICAgICAgIFxyXG4gICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XHJcbiAgICAgICAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiA1MCUgNTAlO1xyXG4gICAgICAgICAgYmFja2dyb3VuZC1zaXplOiAyMDBweDtcclxuICAgICAgICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XHJcbiAgICAgICAgfVxyXG4gICAgICAgIGB9XHJcbiAgICAgIDwvc3R5bGU+XHJcbiAgICAgICAgPC9Nb2RhbD5cclxuICAgICk7XHJcbiAgfVxyXG59XHJcblxyXG5leHBvcnQgZGVmYXVsdCBQb3B1cDsiXX0= */\n/*@ sourceURL=C:\\Users\\mb8user\\Desktop\\Portolio-Compiled2\\pages\\Popup.js */",
+        css: "iframe{background-color:white;background-position:50% 50%;background-size:200px;background-repeat:no-repeat;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcbWI4dXNlclxcRGVza3RvcFxcUG9ydG9saW8tQ29tcGlsZWQyXFxjb21wb25lbnRzXFxQb3B1cC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFtRFMsQUFJa0MsdUJBQ0ssNEJBQ04sc0JBQ00sNEJBQzlCIiwiZmlsZSI6IkM6XFxVc2Vyc1xcbWI4dXNlclxcRGVza3RvcFxcUG9ydG9saW8tQ29tcGlsZWQyXFxjb21wb25lbnRzXFxQb3B1cC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCwgeyBDb21wb25lbnQgfSBmcm9tICdyZWFjdCc7XHJcbmltcG9ydCB7XHJcbiAgQnV0dG9uLFxyXG4gIE1vZGFsSGVhZGVyLFxyXG4gIE1vZGFsLFxyXG4gIE1vZGFsQm9keSxcclxufSBmcm9tICdyZWFjdHN0cmFwJztcclxuaW1wb3J0IGl0ZW1zIGZyb20gJy4vaXRlbXMnO1xyXG5cclxuY2xhc3MgUG9wdXAgZXh0ZW5kcyBDb21wb25lbnQge1xyXG4gIGNvbnN0cnVjdG9yKHByb3BzKSB7XHJcbiAgICBzdXBlcihwcm9wcyk7XHJcbiAgICB0aGlzLnRvZ2dsZSA9IHRoaXMudG9nZ2xlLmJpbmQodGhpcyk7XHJcbiAgICBcclxuICB9XHJcblxyXG4gIHRvZ2dsZShldmVudCkge1xyXG4gICAgXHJcbiAgICB0aGlzLnByb3BzLmFjdGl2YXRlUG9wKGV2ZW50KVxyXG4gIH0gXHJcbiAgcmVuZGVyKCkge1xyXG4gICAgXHJcbiAgICBsZXQgdXJsO1xyXG4gICAgbGV0IGlkID0gdGhpcy5wcm9wcy5jb250ZW50O1xyXG4gICAgXHJcbiAgICAvLyBpZihpZCl7XHJcbiAgICAvLyAgIGlkID0gaWQuc3BsaXQoJy0nKVsxXSAgICBcclxuICAgIC8vICAgXHJcbiAgICAvLyB9XHJcbiAgICAvL2NvbnNvbGUubG9nKCdpZDonICsgaWQpO1xyXG4gICAgaXRlbXMuZm9yRWFjaChpPT57XHJcbiAgICAgIGkubmFtZSA9PSBpZD8gdXJsID0gaS5saW5rIDogbnVsbDtcclxuICAgIH0pXHJcblxyXG5cclxuICAgIHJldHVybiAoIFxyXG4gICAgICAgIDxNb2RhbFxyXG4gICAgICAgIFxyXG4gICAgICAgICAgaXNPcGVuPXt0aGlzLnByb3BzLmlzQWN0aXZlfVxyXG4gICAgICAgICAgdG9nZ2xlPXt0aGlzLnRvZ2dsZX1cclxuICAgICAgICAgIGNsYXNzTmFtZT17dGhpcy5wcm9wcy5jbGFzc05hbWV9XHJcbiAgICAgICAgICBzaXplPXsnbGcnfVxyXG4gICAgICAgICAgaWQ9eydkaWFsb2ctJyArIGlkfT5cclxuICAgICAgICAgIDxNb2RhbEhlYWRlciB0b2dnbGU9e3RoaXMudG9nZ2xlfT5cclxuICAgICAgICAgICAgPGEgaHJlZj17dXJsfSB0YXJnZXQ9XCJfbmV3XCI+IHt1cmx9PC9hPlxyXG4gICAgICAgICAgPC9Nb2RhbEhlYWRlcj5cclxuICAgICAgICAgIDxpZnJhbWVcclxuICAgICAgICAgICAgaWQ9XCJpZnJcIlxyXG4gICAgICAgICAgICBzcmM9e3VybH0+XHJcbiAgICAgICAgICA8L2lmcmFtZT5cclxuICAgICAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPlxyXG4gICAgIHsgICBgXHJcbiAgICAgICAgaWZyYW1le1xyXG4gICAgICAgICAgXHJcbiAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcclxuICAgICAgICAgIGJhY2tncm91bmQtcG9zaXRpb246IDUwJSA1MCU7XHJcbiAgICAgICAgICBiYWNrZ3JvdW5kLXNpemU6IDIwMHB4O1xyXG4gICAgICAgICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcclxuICAgICAgICB9XHJcbiAgICAgICAgYH1cclxuICAgICAgPC9zdHlsZT5cclxuICAgICAgICA8L01vZGFsPlxyXG4gICAgKTtcclxuICB9XHJcbn1cclxuXHJcbmV4cG9ydCBkZWZhdWx0IFBvcHVwOyJdfQ== */\n/*@ sourceURL=C:\\Users\\mb8user\\Desktop\\Portolio-Compiled2\\components\\Popup.js */",
         __self: this
       }));
     }
@@ -218,22 +218,22 @@ function (_Component) {
 
 /***/ }),
 
-/***/ "./pages/Slides.js":
-/*!*************************!*\
-  !*** ./pages/Slides.js ***!
-  \*************************/
+/***/ "./components/Slides.js":
+/*!******************************!*\
+  !*** ./components/Slides.js ***!
+  \******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _items__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./items */ "./pages/items.js");
+/* harmony import */ var _items__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./items */ "./components/items.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactstrap */ "reactstrap");
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _Tooltip__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Tooltip */ "./pages/Tooltip.js");
-var _jsxFileName = "C:\\Users\\mb8user\\Desktop\\Portolio-Compiled2\\pages\\Slides.js";
+/* harmony import */ var _Tooltip__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Tooltip */ "./components/Tooltip.js");
+var _jsxFileName = "C:\\Users\\mb8user\\Desktop\\Portolio-Compiled2\\components\\Slides.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -443,10 +443,10 @@ function (_Component) {
 
 /***/ }),
 
-/***/ "./pages/Tooltip.js":
-/*!**************************!*\
-  !*** ./pages/Tooltip.js ***!
-  \**************************/
+/***/ "./components/Tooltip.js":
+/*!*******************************!*\
+  !*** ./components/Tooltip.js ***!
+  \*******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -457,7 +457,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "reactstrap");
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\mb8user\\Desktop\\Portolio-Compiled2\\pages\\Tooltip.js";
+var _jsxFileName = "C:\\Users\\mb8user\\Desktop\\Portolio-Compiled2\\components\\Tooltip.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -536,6 +536,55 @@ function (_React$Component) {
 
 /***/ }),
 
+/***/ "./components/items.js":
+/*!*****************************!*\
+  !*** ./components/items.js ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var items = [{
+  name: 'a',
+  src: 'static/gifs/angular2.gif',
+  altText: 'Angular',
+  title: 'Angular',
+  caption: 'Typescript, Vue, Ionic, Axios',
+  link: 'https://crypto-angular.herokuapp.com'
+}, {
+  name: 'n',
+  src: 'static/gifs/node2.gif',
+  altText: 'Node',
+  title: 'Node',
+  caption: 'MongoDB, Express, EJS, creating APIs',
+  link: 'https://pizza-order-node.herokuapp.com'
+}, {
+  name: 'c',
+  src: 'static/gifs/csharp2.gif',
+  altText: 'C#',
+  title: 'C#',
+  caption: 'IIS, Mssql, .Net, Mvc, Wpf',
+  link: 'https://mb11.info'
+}, {
+  name: 'd',
+  src: 'static/gifs/design4.gif',
+  altText: 'Design',
+  title: 'Design',
+  caption: 'Responsive, Photoshop, 3d Modeling',
+  link: 'https://mb11.info/design/gallery.html'
+}, {
+  name: 'j',
+  src: 'static/gifs/chapp2.gif',
+  altText: 'Javascript',
+  caption: 'Async, ES6, Jquery, PWAs, Canvas, WebGL',
+  title: 'Javascript',
+  link: 'https://mb11.info/chapp'
+}];
+/* harmony default export */ __webpack_exports__["default"] = (items);
+
+/***/ }),
+
 /***/ "./pages/index.js":
 /*!************************!*\
   !*** ./pages/index.js ***!
@@ -555,9 +604,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _static_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_static_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _static_style_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../static/style.css */ "./static/style.css");
 /* harmony import */ var _static_style_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_static_style_css__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _Popup__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Popup */ "./pages/Popup.js");
-/* harmony import */ var _Slides__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Slides */ "./pages/Slides.js");
-/* harmony import */ var _Tooltip__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Tooltip */ "./pages/Tooltip.js");
+/* harmony import */ var _components_Popup__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Popup */ "./components/Popup.js");
+/* harmony import */ var _components_Slides__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Slides */ "./components/Slides.js");
+/* harmony import */ var _components_Tooltip__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Tooltip */ "./components/Tooltip.js");
 var _jsxFileName = "C:\\Users\\mb8user\\Desktop\\Portolio-Compiled2\\pages\\index.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -803,7 +852,7 @@ function (_Component) {
           lineNumber: 165
         },
         __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Slides__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Slides__WEBPACK_IMPORTED_MODULE_6__["default"], {
         onSlideClick: this.onSlideClick,
         interval: this.state.slideInterval,
         order: this.props.router.query.or,
@@ -812,7 +861,7 @@ function (_Component) {
           lineNumber: 170
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Popup__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Popup__WEBPACK_IMPORTED_MODULE_5__["default"], {
         activatePop: this.activatePop,
         isActive: this.state.isPopActive,
         content: this.state.clickedSlide,
@@ -828,7 +877,7 @@ function (_Component) {
           lineNumber: 178
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Tooltip__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Tooltip__WEBPACK_IMPORTED_MODULE_7__["default"], {
         text: 'Drag or scroll this background',
         position: 'left',
         current: 'top',
@@ -844,7 +893,7 @@ function (_Component) {
           lineNumber: 184
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Tooltip__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Tooltip__WEBPACK_IMPORTED_MODULE_7__["default"], {
         text: 'Drag or scroll this background',
         position: 'bottom',
         current: 'left',
@@ -860,7 +909,7 @@ function (_Component) {
           lineNumber: 190
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Tooltip__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Tooltip__WEBPACK_IMPORTED_MODULE_7__["default"], {
         text: 'Drag or scroll this background',
         position: 'bottom',
         current: 'right',
@@ -885,55 +934,6 @@ function (_Component) {
 
 var Extract = Object(next_router__WEBPACK_IMPORTED_MODULE_0__["withRouter"])(Index);
 /* harmony default export */ __webpack_exports__["default"] = (Extract);
-
-/***/ }),
-
-/***/ "./pages/items.js":
-/*!************************!*\
-  !*** ./pages/items.js ***!
-  \************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var items = [{
-  name: 'a',
-  src: 'static/gifs/angular2.gif',
-  altText: 'Angular',
-  title: 'Angular',
-  caption: 'Typescript, Vue, Ionic, Axios',
-  link: 'https://crypto-angular.herokuapp.com'
-}, {
-  name: 'n',
-  src: 'static/gifs/node2.gif',
-  altText: 'Node',
-  title: 'Node',
-  caption: 'MongoDB, Express, EJS, creating APIs',
-  link: 'https://pizza-order-node.herokuapp.com'
-}, {
-  name: 'c',
-  src: 'static/gifs/csharp2.gif',
-  altText: 'C#',
-  title: 'C#',
-  caption: 'IIS, Mssql, .Net, Mvc, Wpf',
-  link: 'https://mb11.info'
-}, {
-  name: 'd',
-  src: 'static/gifs/design4.gif',
-  altText: 'Design',
-  title: 'Design',
-  caption: 'Responsive, Photoshop, 3d Modeling',
-  link: 'https://mb11.info/design/gallery.html'
-}, {
-  name: 'j',
-  src: 'static/gifs/chapp2.gif',
-  altText: 'Javascript',
-  caption: 'Async, ES6, Jquery, PWAs, Canvas, WebGL',
-  title: 'Javascript',
-  link: 'https://mb11.info/chapp'
-}];
-/* harmony default export */ __webpack_exports__["default"] = (items);
 
 /***/ }),
 
