@@ -3,19 +3,21 @@ import { composeWithDevTools } from 'redux-devtools-extension'
 import thunkMiddleware from 'redux-thunk'
 
 const exampleInitialState = {
-  modalId: ''
+  name: ''
 }
 
 export const actionTypes = {
-  GET_MODAL_ID : "GET_MODAL_ID"
+  GET_MODAL_NAME : "GET_MODAL_NAME"
 }
 
 // REDUCERS
 export const reducer = (state = exampleInitialState, action) => {
   switch(action.type){
-    case actionTypes.GET_MODAL_ID:
-      return Object.assign({
-
+    case actionTypes.GET_MODAL_NAME:
+    //console.log(state)
+    console.log(action.payload)
+      return Object.assign({}, state, {
+        name: action.payload
       })
       default:
       return state;
@@ -24,8 +26,11 @@ export const reducer = (state = exampleInitialState, action) => {
 }
 
 // ACTIONS
-export const getModalId = () => dispatch =>{
-  return dispatch({type: actionTypes.GET_MODAL_ID});
+export const getModalName = name => dispatch =>{
+  return dispatch({
+    type: actionTypes.GET_MODAL_NAME,
+    payload: name
+  });
 }
 
 export function initializeStore (initialState = exampleInitialState) {

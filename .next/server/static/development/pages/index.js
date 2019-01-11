@@ -233,6 +233,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactstrap */ "reactstrap");
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _Tooltip__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Tooltip */ "./components/Tooltip.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../store */ "./store.js");
 var _jsxFileName = "C:\\Users\\mb8user\\Desktop\\Portolio-Compiled2\\components\\Slides.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -253,6 +256,10 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
 
 
 
@@ -269,6 +276,11 @@ function (_Component) {
     _classCallCheck(this, Slides);
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Slides).call(this, props));
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "passId", function (name) {
+      _this.props.getModalName(name);
+    });
+
     _this.state = {
       activeIndex: 0
     };
@@ -276,21 +288,20 @@ function (_Component) {
     _this.previous = _this.previous.bind(_assertThisInitialized(_assertThisInitialized(_this)));
     _this.goToIndex = _this.goToIndex.bind(_assertThisInitialized(_assertThisInitialized(_this)));
     _this.onExiting = _this.onExiting.bind(_assertThisInitialized(_assertThisInitialized(_this)));
-    _this.onExited = _this.onExited.bind(_assertThisInitialized(_assertThisInitialized(_this)));
-    _this.handleClick = _this.handleClick.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.onExited = _this.onExited.bind(_assertThisInitialized(_assertThisInitialized(_this))); // this.handleClick = this.handleClick.bind(this);
+
     return _this;
   }
 
   _createClass(Slides, [{
-    key: "handleClick",
-    value: function handleClick(id, event) {
-      //console.log(event);
-      //console.log(id);
-      event.preventDefault();
-      this.props.onSlideClick(id);
-    }
-  }, {
     key: "onExiting",
+    //was used while lifting state
+    // handleClick(id, event) {
+    //   //console.log(event);
+    //   //console.log(id);
+    //   event.preventDefault();
+    //   this.props.onSlideClick(id);
+    // }
     value: function onExiting() {
       this.animating = true;
     }
@@ -350,7 +361,7 @@ function (_Component) {
           key: item.src,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 80
+            lineNumber: 86
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Tooltip__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -359,7 +370,7 @@ function (_Component) {
           text: 'Click to open the app',
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 84
+            lineNumber: 90
           },
           __self: this
         }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Tooltip__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -368,26 +379,26 @@ function (_Component) {
           text: 'Click to open the app',
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 88
+            lineNumber: 94
           },
           __self: this
         }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-          onClick: _this2.handleClick.bind(_this2, item.name),
+          onClick: _this2.passId.bind(_this2, item.name),
           src: item.src,
           alt: item.altText,
           id: 'img-' + item.name,
           className: 'images',
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 93
+            lineNumber: 99
           },
           __self: this
         }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-          onClick: _this2.handleClick.bind(_this2, item.name),
+          onClick: _this2.passId.bind(_this2, item.name),
           id: 'cap-' + item.name,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 98
+            lineNumber: 105
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["CarouselCaption"], {
@@ -395,7 +406,7 @@ function (_Component) {
           captionHeader: item.title,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 101
+            lineNumber: 108
           },
           __self: this
         })));
@@ -409,7 +420,7 @@ function (_Component) {
         ride: 'carousel',
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 110
+          lineNumber: 117
         },
         __self: this
       }, slides, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["CarouselControl"], {
@@ -419,7 +430,7 @@ function (_Component) {
         onClickHandler: this.previous,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 120
+          lineNumber: 127
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["CarouselControl"], {
@@ -429,7 +440,7 @@ function (_Component) {
         onClickHandler: this.next,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 121
+          lineNumber: 128
         },
         __self: this
       }));
@@ -439,7 +450,16 @@ function (_Component) {
   return Slides;
 }(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
 
-/* harmony default export */ __webpack_exports__["default"] = (Slides);
+function mapStateToProps(state) {
+  var name = state.name;
+  return {
+    name: name
+  };
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_4__["connect"])(mapStateToProps, {
+  getModalName: _store__WEBPACK_IMPORTED_MODULE_5__["getModalName"]
+})(Slides));
 
 /***/ }),
 
@@ -607,6 +627,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Popup__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Popup */ "./components/Popup.js");
 /* harmony import */ var _components_Slides__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Slides */ "./components/Slides.js");
 /* harmony import */ var _components_Tooltip__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Tooltip */ "./components/Tooltip.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_8__);
 var _jsxFileName = "C:\\Users\\mb8user\\Desktop\\Portolio-Compiled2\\pages\\index.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -636,6 +658,7 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 
 
 
+
 var Index =
 /*#__PURE__*/
 function (_Component) {
@@ -649,7 +672,7 @@ function (_Component) {
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Index).call(this, props));
     _this.state = {
       isPopActive: false,
-      slideInterval: 3000,
+      slideInterval: 33000,
       clickedSlide: ''
     };
     _this.onSlideClick = _this.onSlideClick.bind(_assertThisInitialized(_assertThisInitialized(_this)));
@@ -770,6 +793,12 @@ function (_Component) {
       }
     }
   }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate() {
+      console.log('didUpdate'); //open pop up and reset name
+      //so popup opens twice in a row
+    }
+  }, {
     key: "onSlideClick",
     value: function onSlideClick(id) {
       setTimeout(function () {
@@ -791,7 +820,7 @@ function (_Component) {
     value: function activatePop(event) {
       this.setState({
         isPopActive: !this.state.isPopActive,
-        slideInterval: 3000
+        slideInterval: 33000
       });
     }
   }, {
@@ -801,19 +830,19 @@ function (_Component) {
         id: "container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 157
+          lineNumber: 164
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 158
+          lineNumber: 165
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("title", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 159
+          lineNumber: 166
         },
         __self: this
       }, "Portfolio"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
@@ -821,35 +850,35 @@ function (_Component) {
         content: "initial-scale=1.0, width=device-width",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 160
+          lineNumber: 167
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         src: "static/3dmodel/three.js",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 162
+          lineNumber: 169
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         src: "static/3dmodel/OrbitControls.js",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 163
+          lineNumber: 170
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         src: "static/3dmodel/GLTFLoader.js",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 164
+          lineNumber: 171
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         src: "static/3dmodel/WebGL.js",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 165
+          lineNumber: 172
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Slides__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -858,7 +887,7 @@ function (_Component) {
         order: this.props.router.query.or,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 170
+          lineNumber: 177
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Popup__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -867,14 +896,14 @@ function (_Component) {
         content: this.state.clickedSlide,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 174
+          lineNumber: 181
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         id: "top",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 178
+          lineNumber: 185
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Tooltip__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -883,14 +912,14 @@ function (_Component) {
         current: 'top',
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 179
+          lineNumber: 186
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         id: "left",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 184
+          lineNumber: 191
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Tooltip__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -899,14 +928,14 @@ function (_Component) {
         current: 'left',
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 185
+          lineNumber: 192
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         id: "right",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 190
+          lineNumber: 197
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Tooltip__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -915,14 +944,14 @@ function (_Component) {
         current: 'right',
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 191
+          lineNumber: 198
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         id: "bottom",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 196
+          lineNumber: 203
         },
         __self: this
       }));
@@ -932,8 +961,15 @@ function (_Component) {
   return Index;
 }(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
 
+function mapStateToProps(state) {
+  var name = state.name;
+  return {
+    name: name
+  };
+}
+
 var Extract = Object(next_router__WEBPACK_IMPORTED_MODULE_0__["withRouter"])(Index);
-/* harmony default export */ __webpack_exports__["default"] = (Extract);
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_8__["connect"])(mapStateToProps)(Extract));
 
 /***/ }),
 
@@ -956,6 +992,67 @@ var Extract = Object(next_router__WEBPACK_IMPORTED_MODULE_0__["withRouter"])(Ind
 /***/ (function(module, exports) {
 
 
+
+/***/ }),
+
+/***/ "./store.js":
+/*!******************!*\
+  !*** ./store.js ***!
+  \******************/
+/*! exports provided: actionTypes, reducer, getModalName, initializeStore */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "actionTypes", function() { return actionTypes; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "reducer", function() { return reducer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getModalName", function() { return getModalName; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "initializeStore", function() { return initializeStore; });
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ "redux");
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(redux__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var redux_devtools_extension__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux-devtools-extension */ "redux-devtools-extension");
+/* harmony import */ var redux_devtools_extension__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(redux_devtools_extension__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var redux_thunk__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! redux-thunk */ "redux-thunk");
+/* harmony import */ var redux_thunk__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(redux_thunk__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+var exampleInitialState = {
+  name: ''
+};
+var actionTypes = {
+  GET_MODAL_NAME: "GET_MODAL_NAME" // REDUCERS
+
+};
+var reducer = function reducer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : exampleInitialState;
+  var action = arguments.length > 1 ? arguments[1] : undefined;
+
+  switch (action.type) {
+    case actionTypes.GET_MODAL_NAME:
+      //console.log(state)
+      console.log(action.payload);
+      return Object.assign({}, state, {
+        name: action.payload
+      });
+
+    default:
+      return state;
+  }
+}; // ACTIONS
+
+var getModalName = function getModalName(name) {
+  return function (dispatch) {
+    return dispatch({
+      type: actionTypes.GET_MODAL_NAME,
+      payload: name
+    });
+  };
+};
+function initializeStore() {
+  var initialState = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : exampleInitialState;
+  return Object(redux__WEBPACK_IMPORTED_MODULE_0__["createStore"])(reducer, initialState, Object(redux_devtools_extension__WEBPACK_IMPORTED_MODULE_1__["composeWithDevTools"])(Object(redux__WEBPACK_IMPORTED_MODULE_0__["applyMiddleware"])(redux_thunk__WEBPACK_IMPORTED_MODULE_2___default.a)));
+}
 
 /***/ }),
 
@@ -1004,6 +1101,17 @@ module.exports = require("react");
 
 /***/ }),
 
+/***/ "react-redux":
+/*!******************************!*\
+  !*** external "react-redux" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-redux");
+
+/***/ }),
+
 /***/ "reactstrap":
 /*!*****************************!*\
   !*** external "reactstrap" ***!
@@ -1012,6 +1120,39 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("reactstrap");
+
+/***/ }),
+
+/***/ "redux":
+/*!************************!*\
+  !*** external "redux" ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("redux");
+
+/***/ }),
+
+/***/ "redux-devtools-extension":
+/*!*******************************************!*\
+  !*** external "redux-devtools-extension" ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("redux-devtools-extension");
+
+/***/ }),
+
+/***/ "redux-thunk":
+/*!******************************!*\
+  !*** external "redux-thunk" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("redux-thunk");
 
 /***/ }),
 

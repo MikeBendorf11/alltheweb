@@ -339,14 +339,14 @@ function (_App) {
 /*!******************!*\
   !*** ./store.js ***!
   \******************/
-/*! exports provided: actionTypes, reducer, getModalId, initializeStore */
+/*! exports provided: actionTypes, reducer, getModalName, initializeStore */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "actionTypes", function() { return actionTypes; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "reducer", function() { return reducer; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getModalId", function() { return getModalId; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getModalName", function() { return getModalName; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "initializeStore", function() { return initializeStore; });
 /* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ "redux");
 /* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(redux__WEBPACK_IMPORTED_MODULE_0__);
@@ -358,10 +358,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var exampleInitialState = {
-  modalId: ''
+  name: ''
 };
 var actionTypes = {
-  GET_MODAL_ID: "GET_MODAL_ID" // REDUCERS
+  GET_MODAL_NAME: "GET_MODAL_NAME" // REDUCERS
 
 };
 var reducer = function reducer() {
@@ -369,18 +369,23 @@ var reducer = function reducer() {
   var action = arguments.length > 1 ? arguments[1] : undefined;
 
   switch (action.type) {
-    case actionTypes.GET_MODAL_ID:
-      return Object.assign({});
+    case actionTypes.GET_MODAL_NAME:
+      //console.log(state)
+      console.log(action.payload);
+      return Object.assign({}, state, {
+        name: action.payload
+      });
 
     default:
       return state;
   }
 }; // ACTIONS
 
-var getModalId = function getModalId() {
+var getModalName = function getModalName(name) {
   return function (dispatch) {
     return dispatch({
-      type: actionTypes.GET_MODAL_ID
+      type: actionTypes.GET_MODAL_NAME,
+      payload: name
     });
   };
 };

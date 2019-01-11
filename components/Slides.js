@@ -7,6 +7,8 @@ import {
   CarouselCaption
 } from 'reactstrap';
 import Tooltip from './Tooltip';
+import { connect } from 'react-redux';
+import {getModalName} from '../store';
 
 class Slides extends Component {
   constructor(props) {
@@ -20,15 +22,20 @@ class Slides extends Component {
     this.goToIndex = this.goToIndex.bind(this);
     this.onExiting = this.onExiting.bind(this);
     this.onExited = this.onExited.bind(this);
-    this.handleClick = this.handleClick.bind(this);
+    // this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick(id, event) {
-    //console.log(event);
-    //console.log(id);
-    event.preventDefault();
-    this.props.onSlideClick(id);
+  passId=(name)=>{
+    this.props.getModalName(name);
   }
+
+  //was used while lifting state
+  // handleClick(id, event) {
+  //   //console.log(event);
+  //   //console.log(id);
+  //   event.preventDefault();
+  //   this.props.onSlideClick(id);
+  // }
 
   onExiting() {
     this.animating = true;
@@ -74,7 +81,6 @@ class Slides extends Component {
     }
     //ancdj
     
-
     const slides = arr.map((item) => {
       return (
         <CarouselItem
@@ -91,12 +97,13 @@ class Slides extends Component {
             text={'Click to open the app'} />
             
           <img
-            onClick={this.handleClick.bind(this, item.name)} src={item.src}
+            onClick={this.passId.bind(this,item.name)} 
+            src={item.src}
             alt={item.altText}
             id={'img-' + item.name} 
             className={'images'}/>
           <div
-            onClick={this.handleClick.bind(this, item.name)}
+            onClick={this.passId.bind(this,item.name)}
             id={'cap-' + item.name}>
             <CarouselCaption
               captionText={item.caption}
@@ -124,4 +131,8 @@ class Slides extends Component {
   }
 }
 
-export default Slides;
+function mapStateToProps(state){
+  const{name}=state;
+  return {name}
+}
+export default connect(mapStateToProps,{getModalName})(Slides);

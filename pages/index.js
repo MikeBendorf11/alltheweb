@@ -6,13 +6,14 @@ import '../static/style.css';
 import Popup from '../components/Popup';  
 import Slides from '../components/Slides';
 import Tooltip from '../components/Tooltip';
+import { connect } from 'react-redux'
 
 class Index extends Component {
   constructor(props) {
     super(props);
     this.state = { 
       isPopActive: false,
-      slideInterval: 3000,
+      slideInterval: 33000,
       clickedSlide: ''
      };
     this.onSlideClick = this.onSlideClick.bind(this);
@@ -129,6 +130,12 @@ class Index extends Component {
     }
     
   }
+ 
+  componentDidUpdate(){
+    console.log('didUpdate')
+    //open pop up and reset name
+    //so popup opens twice in a row
+  }
   onSlideClick(id) {
     setTimeout(()=>{
       var theIfr = document.querySelector('#ifr');
@@ -148,7 +155,7 @@ class Index extends Component {
     
     this.setState({ 
       isPopActive: !this.state.isPopActive,
-      slideInterval: 3000
+      slideInterval: 33000
     })
   }
 
@@ -201,8 +208,11 @@ class Index extends Component {
   }
 }
 
-
+function mapStateToProps (state) {
+  const {name} = state
+  return {name}
+}
 const Extract = withRouter(Index)
 
-export default Extract;
+export default connect(mapStateToProps)(Extract);
 
