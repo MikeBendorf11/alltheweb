@@ -6,18 +6,18 @@ import '../static/style.css';
 import Popup from '../components/Popup';  
 import Slides from '../components/Slides';
 import Tooltip from '../components/Tooltip';
-import { connect } from 'react-redux'
+
 
 class Index extends Component {
   constructor(props) {
     super(props);
     this.state = { 
       isPopActive: false,
-      slideInterval: 33000,
+      slideInterval: 3000,
       clickedSlide: ''
      };
-    this.onSlideClick = this.onSlideClick.bind(this);
-    this.activatePop = this.activatePop.bind(this);
+    //this.onSlideClick = this.onSlideClick.bind(this);
+    //this.activatePop = this.activatePop.bind(this);
   }
   componentDidMount(){
     
@@ -130,34 +130,30 @@ class Index extends Component {
     }
     
   }
- 
-  componentDidUpdate(){
-    console.log('didUpdate')
-    //open pop up and reset name
-    //so popup opens twice in a row
-  }
-  onSlideClick(id) {
-    setTimeout(()=>{
-      var theIfr = document.querySelector('#ifr');
-      console.log(theIfr)  
-      if(theIfr){
-        theIfr.style.backgroundImage = `url(static/gifs/loading2.gif?r=${new Date().getTime()})`
-      }
-    },1000)
+
+  // onSlideClick(id) {
+  //   /*setTimeout(()=>{
+  //     var theIfr = document.querySelector('#ifr');
+  //     console.log(theIfr)  
+  //     if(theIfr){
+  //       theIfr.style.backgroundImage = `url(static/gifs/loading2.gif?r=${new Date().getTime()})`
+  //     }
+  //   },1000)*/
     
-    this.setState({ 
-      isPopActive: !this.state.isPopActive,
-      slideInterval: false,
-      clickedSlide: id
-    })
-  }
-  activatePop(event) {
+  //   this.setState({ 
+  //     isPopActive: !this.state.isPopActive,
+  //     slideInterval: false,
+  //     clickedSlide: id
+  //   })
+  // }
+  
+  // activatePop(event) {
     
-    this.setState({ 
-      isPopActive: !this.state.isPopActive,
-      slideInterval: 33000
-    })
-  }
+  //   this.setState({ 
+  //     isPopActive: !this.state.isPopActive,
+  //     slideInterval: 3000
+  //   })
+  // }
 
   render() {
     return (
@@ -175,12 +171,12 @@ class Index extends Component {
         {/* <div id='theBody'></div> */}
         
         <Slides 
-          onSlideClick={this.onSlideClick} 
+          // onSlideClick={this.onSlideClick} 
           interval={this.state.slideInterval} 
           order={this.props.router.query.or}/>
         <Popup 
-          activatePop={this.activatePop} 
-          isActive={this.state.isPopActive} 
+          //activatePop={this.activatePop} 
+          //isActive={this.state.isPopActive} 
           content={this.state.clickedSlide}/>
           <div id="top">
           <Tooltip 
@@ -208,11 +204,8 @@ class Index extends Component {
   }
 }
 
-function mapStateToProps (state) {
-  const {name} = state
-  return {name}
-}
+
 const Extract = withRouter(Index)
 
-export default connect(mapStateToProps)(Extract);
+export default Extract;
 

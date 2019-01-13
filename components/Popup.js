@@ -6,6 +6,8 @@ import {
   ModalBody,
 } from 'reactstrap';
 import items from './items';
+import { connect } from 'react-redux';
+import {changeModalName} from '../store';
 
 class Popup extends Component {
   constructor(props) {
@@ -13,34 +15,33 @@ class Popup extends Component {
     this.toggle = this.toggle.bind(this);
     
   }
-
   toggle(event) {
-    
-    this.props.activatePop(event)
+    //this.props.activatePop(event)
+    //set global name back to ''
+    this.props.changeModalName('')
   } 
+  // componentDidUpdate(){
+  //   console.log(this.props);
+  // }
   render() {
-    
-    let url;
-    let id = this.props.content;
-    
-    // if(id){
-    //   id = id.split('-')[1]    
-    //   
-    // }
-    //console.log('id:' + id);
-    items.forEach(i=>{
-      i.name == id? url = i.link : null;
-    })
+    const {modalVisible} = this.props;
+    const {name} = this.props;
 
+    let url;
+    //let name = this.props.content;
+    
+    items.forEach(i=>{
+      i.name == name? url = i.link : null;
+    })
 
     return ( 
         <Modal
         
-          isOpen={this.props.isActive}
+          isOpen={modalVisible} //was isActive comming from index
           toggle={this.toggle}
           className={this.props.className}
           size={'lg'}
-          id={'dialog-' + id}>
+          id={'dialog-' + name}>
           <ModalHeader toggle={this.toggle}>
             <a href={url} target="_new"> {url}</a>
           </ModalHeader>
@@ -63,5 +64,8 @@ class Popup extends Component {
     );
   }
 }
-
-export default Popup;
+function mapStateToProps(state){
+  const {name, modalVisible} = state
+  return {name, modalVisible}
+}
+export default connect(mapStateToProps,{changeModalName})(Popup);

@@ -8,7 +8,7 @@ import {
 } from 'reactstrap';
 import Tooltip from './Tooltip';
 import { connect } from 'react-redux';
-import {getModalName} from '../store';
+import {changeModalName} from '../store';
 
 class Slides extends Component {
   constructor(props) {
@@ -26,7 +26,7 @@ class Slides extends Component {
   }
 
   passId=(name)=>{
-    this.props.getModalName(name);
+    this.props.changeModalName(name);
   }
 
   //was used while lifting state
@@ -135,4 +135,4 @@ function mapStateToProps(state){
   const{name}=state;
   return {name}
 }
-export default connect(mapStateToProps,{getModalName})(Slides);
+export default connect(mapStateToProps,{changeModalName})(Slides);

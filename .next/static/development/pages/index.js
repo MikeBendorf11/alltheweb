@@ -15,6 +15,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/dist/reactstrap.es.js");
 /* harmony import */ var _items__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./items */ "./components/items.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../store */ "./store.js");
 var _jsxFileName = "C:\\Users\\mb8user\\Desktop\\Portolio-Compiled2\\components\\Popup.js";
 
 
@@ -40,6 +42,8 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 
 
 
+
+
 var Popup =
 /*#__PURE__*/
 function (_Component) {
@@ -58,37 +62,40 @@ function (_Component) {
   _createClass(Popup, [{
     key: "toggle",
     value: function toggle(event) {
-      this.props.activatePop(event);
-    }
+      //this.props.activatePop(event)
+      //set global name back to ''
+      this.props.changeModalName('');
+    } // componentDidUpdate(){
+    //   console.log(this.props);
+    // }
+
   }, {
     key: "render",
     value: function render() {
-      var url;
-      var id = this.props.content; // if(id){
-      //   id = id.split('-')[1]    
-      //   
-      // }
-      //console.log('id:' + id);
+      var modalVisible = this.props.modalVisible;
+      var name = this.props.name;
+      var url; //let name = this.props.content;
 
       _items__WEBPACK_IMPORTED_MODULE_3__["default"].forEach(function (i) {
-        i.name == id ? url = i.link : null;
+        i.name == name ? url = i.link : null;
       });
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Modal"], {
-        isOpen: this.props.isActive,
+        isOpen: modalVisible //was isActive comming from index
+        ,
         toggle: this.toggle,
         className: this.props.className,
         size: 'lg',
-        id: 'dialog-' + id,
+        id: 'dialog-' + name,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 38
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["ModalHeader"], {
         toggle: this.toggle,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 45
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
@@ -97,7 +104,7 @@ function (_Component) {
         className: "jsx-1527947274",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 46
         },
         __self: this
       }, " ", url)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("iframe", {
@@ -106,12 +113,12 @@ function (_Component) {
         className: "jsx-1527947274",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 48
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
         styleId: "1527947274",
-        css: "iframe{background-color:white;background-position:50% 50%;background-size:200px;background-repeat:no-repeat;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcbWI4dXNlclxcRGVza3RvcFxcUG9ydG9saW8tQ29tcGlsZWQyXFxjb21wb25lbnRzXFxQb3B1cC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFtRFMsQUFJa0MsdUJBQ0ssNEJBQ04sc0JBQ00sNEJBQzlCIiwiZmlsZSI6IkM6XFxVc2Vyc1xcbWI4dXNlclxcRGVza3RvcFxcUG9ydG9saW8tQ29tcGlsZWQyXFxjb21wb25lbnRzXFxQb3B1cC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCwgeyBDb21wb25lbnQgfSBmcm9tICdyZWFjdCc7XHJcbmltcG9ydCB7XHJcbiAgQnV0dG9uLFxyXG4gIE1vZGFsSGVhZGVyLFxyXG4gIE1vZGFsLFxyXG4gIE1vZGFsQm9keSxcclxufSBmcm9tICdyZWFjdHN0cmFwJztcclxuaW1wb3J0IGl0ZW1zIGZyb20gJy4vaXRlbXMnO1xyXG5cclxuY2xhc3MgUG9wdXAgZXh0ZW5kcyBDb21wb25lbnQge1xyXG4gIGNvbnN0cnVjdG9yKHByb3BzKSB7XHJcbiAgICBzdXBlcihwcm9wcyk7XHJcbiAgICB0aGlzLnRvZ2dsZSA9IHRoaXMudG9nZ2xlLmJpbmQodGhpcyk7XHJcbiAgICBcclxuICB9XHJcblxyXG4gIHRvZ2dsZShldmVudCkge1xyXG4gICAgXHJcbiAgICB0aGlzLnByb3BzLmFjdGl2YXRlUG9wKGV2ZW50KVxyXG4gIH0gXHJcbiAgcmVuZGVyKCkge1xyXG4gICAgXHJcbiAgICBsZXQgdXJsO1xyXG4gICAgbGV0IGlkID0gdGhpcy5wcm9wcy5jb250ZW50O1xyXG4gICAgXHJcbiAgICAvLyBpZihpZCl7XHJcbiAgICAvLyAgIGlkID0gaWQuc3BsaXQoJy0nKVsxXSAgICBcclxuICAgIC8vICAgXHJcbiAgICAvLyB9XHJcbiAgICAvL2NvbnNvbGUubG9nKCdpZDonICsgaWQpO1xyXG4gICAgaXRlbXMuZm9yRWFjaChpPT57XHJcbiAgICAgIGkubmFtZSA9PSBpZD8gdXJsID0gaS5saW5rIDogbnVsbDtcclxuICAgIH0pXHJcblxyXG5cclxuICAgIHJldHVybiAoIFxyXG4gICAgICAgIDxNb2RhbFxyXG4gICAgICAgIFxyXG4gICAgICAgICAgaXNPcGVuPXt0aGlzLnByb3BzLmlzQWN0aXZlfVxyXG4gICAgICAgICAgdG9nZ2xlPXt0aGlzLnRvZ2dsZX1cclxuICAgICAgICAgIGNsYXNzTmFtZT17dGhpcy5wcm9wcy5jbGFzc05hbWV9XHJcbiAgICAgICAgICBzaXplPXsnbGcnfVxyXG4gICAgICAgICAgaWQ9eydkaWFsb2ctJyArIGlkfT5cclxuICAgICAgICAgIDxNb2RhbEhlYWRlciB0b2dnbGU9e3RoaXMudG9nZ2xlfT5cclxuICAgICAgICAgICAgPGEgaHJlZj17dXJsfSB0YXJnZXQ9XCJfbmV3XCI+IHt1cmx9PC9hPlxyXG4gICAgICAgICAgPC9Nb2RhbEhlYWRlcj5cclxuICAgICAgICAgIDxpZnJhbWVcclxuICAgICAgICAgICAgaWQ9XCJpZnJcIlxyXG4gICAgICAgICAgICBzcmM9e3VybH0+XHJcbiAgICAgICAgICA8L2lmcmFtZT5cclxuICAgICAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPlxyXG4gICAgIHsgICBgXHJcbiAgICAgICAgaWZyYW1le1xyXG4gICAgICAgICAgXHJcbiAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcclxuICAgICAgICAgIGJhY2tncm91bmQtcG9zaXRpb246IDUwJSA1MCU7XHJcbiAgICAgICAgICBiYWNrZ3JvdW5kLXNpemU6IDIwMHB4O1xyXG4gICAgICAgICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcclxuICAgICAgICB9XHJcbiAgICAgICAgYH1cclxuICAgICAgPC9zdHlsZT5cclxuICAgICAgICA8L01vZGFsPlxyXG4gICAgKTtcclxuICB9XHJcbn1cclxuXHJcbmV4cG9ydCBkZWZhdWx0IFBvcHVwOyJdfQ== */\n/*@ sourceURL=C:\\Users\\mb8user\\Desktop\\Portolio-Compiled2\\components\\Popup.js */",
+        css: "iframe{background-color:white;background-position:50% 50%;background-size:200px;background-repeat:no-repeat;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcbWI4dXNlclxcRGVza3RvcFxcUG9ydG9saW8tQ29tcGlsZWQyXFxjb21wb25lbnRzXFxQb3B1cC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFvRFMsQUFJa0MsdUJBQ0ssNEJBQ04sc0JBQ00sNEJBQzlCIiwiZmlsZSI6IkM6XFxVc2Vyc1xcbWI4dXNlclxcRGVza3RvcFxcUG9ydG9saW8tQ29tcGlsZWQyXFxjb21wb25lbnRzXFxQb3B1cC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCwgeyBDb21wb25lbnQgfSBmcm9tICdyZWFjdCc7XHJcbmltcG9ydCB7XHJcbiAgQnV0dG9uLFxyXG4gIE1vZGFsSGVhZGVyLFxyXG4gIE1vZGFsLFxyXG4gIE1vZGFsQm9keSxcclxufSBmcm9tICdyZWFjdHN0cmFwJztcclxuaW1wb3J0IGl0ZW1zIGZyb20gJy4vaXRlbXMnO1xyXG5pbXBvcnQgeyBjb25uZWN0IH0gZnJvbSAncmVhY3QtcmVkdXgnO1xyXG5pbXBvcnQge2NoYW5nZU1vZGFsTmFtZX0gZnJvbSAnLi4vc3RvcmUnO1xyXG5cclxuY2xhc3MgUG9wdXAgZXh0ZW5kcyBDb21wb25lbnQge1xyXG4gIGNvbnN0cnVjdG9yKHByb3BzKSB7XHJcbiAgICBzdXBlcihwcm9wcyk7XHJcbiAgICB0aGlzLnRvZ2dsZSA9IHRoaXMudG9nZ2xlLmJpbmQodGhpcyk7XHJcbiAgICBcclxuICB9XHJcbiAgdG9nZ2xlKGV2ZW50KSB7XHJcbiAgICAvL3RoaXMucHJvcHMuYWN0aXZhdGVQb3AoZXZlbnQpXHJcbiAgICAvL3NldCBnbG9iYWwgbmFtZSBiYWNrIHRvICcnXHJcbiAgICB0aGlzLnByb3BzLmNoYW5nZU1vZGFsTmFtZSgnJylcclxuICB9IFxyXG4gIC8vIGNvbXBvbmVudERpZFVwZGF0ZSgpe1xyXG4gIC8vICAgY29uc29sZS5sb2codGhpcy5wcm9wcyk7XHJcbiAgLy8gfVxyXG4gIHJlbmRlcigpIHtcclxuICAgIGNvbnN0IHttb2RhbFZpc2libGV9ID0gdGhpcy5wcm9wcztcclxuICAgIGNvbnN0IHtuYW1lfSA9IHRoaXMucHJvcHM7XHJcblxyXG4gICAgbGV0IHVybDtcclxuICAgIC8vbGV0IG5hbWUgPSB0aGlzLnByb3BzLmNvbnRlbnQ7XHJcbiAgICBcclxuICAgIGl0ZW1zLmZvckVhY2goaT0+e1xyXG4gICAgICBpLm5hbWUgPT0gbmFtZT8gdXJsID0gaS5saW5rIDogbnVsbDtcclxuICAgIH0pXHJcblxyXG4gICAgcmV0dXJuICggXHJcbiAgICAgICAgPE1vZGFsXHJcbiAgICAgICAgXHJcbiAgICAgICAgICBpc09wZW49e21vZGFsVmlzaWJsZX0gLy93YXMgaXNBY3RpdmUgY29tbWluZyBmcm9tIGluZGV4XHJcbiAgICAgICAgICB0b2dnbGU9e3RoaXMudG9nZ2xlfVxyXG4gICAgICAgICAgY2xhc3NOYW1lPXt0aGlzLnByb3BzLmNsYXNzTmFtZX1cclxuICAgICAgICAgIHNpemU9eydsZyd9XHJcbiAgICAgICAgICBpZD17J2RpYWxvZy0nICsgbmFtZX0+XHJcbiAgICAgICAgICA8TW9kYWxIZWFkZXIgdG9nZ2xlPXt0aGlzLnRvZ2dsZX0+XHJcbiAgICAgICAgICAgIDxhIGhyZWY9e3VybH0gdGFyZ2V0PVwiX25ld1wiPiB7dXJsfTwvYT5cclxuICAgICAgICAgIDwvTW9kYWxIZWFkZXI+XHJcbiAgICAgICAgICA8aWZyYW1lXHJcbiAgICAgICAgICAgIGlkPVwiaWZyXCJcclxuICAgICAgICAgICAgc3JjPXt1cmx9PlxyXG4gICAgICAgICAgPC9pZnJhbWU+XHJcbiAgICAgICAgICA8c3R5bGUganN4IGdsb2JhbD5cclxuICAgICB7ICAgYFxyXG4gICAgICAgIGlmcmFtZXtcclxuICAgICAgICAgIFxyXG4gICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XHJcbiAgICAgICAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiA1MCUgNTAlO1xyXG4gICAgICAgICAgYmFja2dyb3VuZC1zaXplOiAyMDBweDtcclxuICAgICAgICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XHJcbiAgICAgICAgfVxyXG4gICAgICAgIGB9XHJcbiAgICAgIDwvc3R5bGU+XHJcbiAgICAgICAgPC9Nb2RhbD5cclxuICAgICk7XHJcbiAgfVxyXG59XHJcbmZ1bmN0aW9uIG1hcFN0YXRlVG9Qcm9wcyhzdGF0ZSl7XHJcbiAgY29uc3Qge25hbWUsIG1vZGFsVmlzaWJsZX0gPSBzdGF0ZVxyXG4gIHJldHVybiB7bmFtZSwgbW9kYWxWaXNpYmxlfVxyXG59XHJcbmV4cG9ydCBkZWZhdWx0IGNvbm5lY3QobWFwU3RhdGVUb1Byb3BzLHtjaGFuZ2VNb2RhbE5hbWV9KShQb3B1cCk7Il19 */\n/*@ sourceURL=C:\\Users\\mb8user\\Desktop\\Portolio-Compiled2\\components\\Popup.js */",
         __self: this
       }));
     }
@@ -120,7 +127,18 @@ function (_Component) {
   return Popup;
 }(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
 
-/* harmony default export */ __webpack_exports__["default"] = (Popup);
+function mapStateToProps(state) {
+  var name = state.name,
+      modalVisible = state.modalVisible;
+  return {
+    name: name,
+    modalVisible: modalVisible
+  };
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_4__["connect"])(mapStateToProps, {
+  changeModalName: _store__WEBPACK_IMPORTED_MODULE_5__["changeModalName"]
+})(Popup));
 
 /***/ }),
 
@@ -182,7 +200,7 @@ function (_Component) {
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Slides).call(this, props));
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "passId", function (name) {
-      _this.props.getModalName(name);
+      _this.props.changeModalName(name);
     });
 
     _this.state = {
@@ -362,7 +380,7 @@ function mapStateToProps(state) {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_4__["connect"])(mapStateToProps, {
-  getModalName: _store__WEBPACK_IMPORTED_MODULE_5__["getModalName"]
+  changeModalName: _store__WEBPACK_IMPORTED_MODULE_5__["changeModalName"]
 })(Slides));
 
 /***/ }),
@@ -23137,7 +23155,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Popup__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Popup */ "./components/Popup.js");
 /* harmony import */ var _components_Slides__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Slides */ "./components/Slides.js");
 /* harmony import */ var _components_Tooltip__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Tooltip */ "./components/Tooltip.js");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 var _jsxFileName = "C:\\Users\\mb8user\\Desktop\\Portolio-Compiled2\\pages\\index.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -23150,14 +23167,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
 
 
 
@@ -23181,11 +23197,11 @@ function (_Component) {
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Index).call(this, props));
     _this.state = {
       isPopActive: false,
-      slideInterval: 33000,
+      slideInterval: 3000,
       clickedSlide: ''
-    };
-    _this.onSlideClick = _this.onSlideClick.bind(_assertThisInitialized(_assertThisInitialized(_this)));
-    _this.activatePop = _this.activatePop.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    }; //this.onSlideClick = this.onSlideClick.bind(this);
+    //this.activatePop = this.activatePop.bind(this);
+
     return _this;
   }
 
@@ -23300,38 +23316,27 @@ function (_Component) {
         requestAnimationFrame(animate);
         renderer.render(scene, camera);
       }
-    }
-  }, {
-    key: "componentDidUpdate",
-    value: function componentDidUpdate() {
-      console.log('didUpdate'); //open pop up and reset name
-      //so popup opens twice in a row
-    }
-  }, {
-    key: "onSlideClick",
-    value: function onSlideClick(id) {
-      setTimeout(function () {
-        var theIfr = document.querySelector('#ifr');
-        console.log(theIfr);
+    } // onSlideClick(id) {
+    //   /*setTimeout(()=>{
+    //     var theIfr = document.querySelector('#ifr');
+    //     console.log(theIfr)  
+    //     if(theIfr){
+    //       theIfr.style.backgroundImage = `url(static/gifs/loading2.gif?r=${new Date().getTime()})`
+    //     }
+    //   },1000)*/
+    //   this.setState({ 
+    //     isPopActive: !this.state.isPopActive,
+    //     slideInterval: false,
+    //     clickedSlide: id
+    //   })
+    // }
+    // activatePop(event) {
+    //   this.setState({ 
+    //     isPopActive: !this.state.isPopActive,
+    //     slideInterval: 3000
+    //   })
+    // }
 
-        if (theIfr) {
-          theIfr.style.backgroundImage = "url(static/gifs/loading2.gif?r=".concat(new Date().getTime(), ")");
-        }
-      }, 1000);
-      this.setState({
-        isPopActive: !this.state.isPopActive,
-        slideInterval: false,
-        clickedSlide: id
-      });
-    }
-  }, {
-    key: "activatePop",
-    value: function activatePop(event) {
-      this.setState({
-        isPopActive: !this.state.isPopActive,
-        slideInterval: 33000
-      });
-    }
   }, {
     key: "render",
     value: function render() {
@@ -23339,19 +23344,19 @@ function (_Component) {
         id: "container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 164
+          lineNumber: 160
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 165
+          lineNumber: 161
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("title", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 166
+          lineNumber: 162
         },
         __self: this
       }, "Portfolio"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
@@ -23359,60 +23364,60 @@ function (_Component) {
         content: "initial-scale=1.0, width=device-width",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 167
+          lineNumber: 163
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         src: "static/3dmodel/three.js",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 169
+          lineNumber: 165
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         src: "static/3dmodel/OrbitControls.js",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 170
+          lineNumber: 166
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         src: "static/3dmodel/GLTFLoader.js",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 171
+          lineNumber: 167
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         src: "static/3dmodel/WebGL.js",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 172
+          lineNumber: 168
         },
         __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Slides__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        onSlideClick: this.onSlideClick,
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Slides__WEBPACK_IMPORTED_MODULE_6__["default"] // onSlideClick={this.onSlideClick} 
+      , {
         interval: this.state.slideInterval,
         order: this.props.router.query.or,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 177
+          lineNumber: 173
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Popup__WEBPACK_IMPORTED_MODULE_5__["default"], {
-        activatePop: this.activatePop,
-        isActive: this.state.isPopActive,
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Popup__WEBPACK_IMPORTED_MODULE_5__["default"] //activatePop={this.activatePop} 
+      //isActive={this.state.isPopActive} 
+      , {
         content: this.state.clickedSlide,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 181
+          lineNumber: 177
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         id: "top",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 185
+          lineNumber: 181
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Tooltip__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -23421,14 +23426,14 @@ function (_Component) {
         current: 'top',
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 186
+          lineNumber: 182
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         id: "left",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 191
+          lineNumber: 187
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Tooltip__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -23437,14 +23442,14 @@ function (_Component) {
         current: 'left',
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 192
+          lineNumber: 188
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         id: "right",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 197
+          lineNumber: 193
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Tooltip__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -23453,14 +23458,14 @@ function (_Component) {
         current: 'right',
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 198
+          lineNumber: 194
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         id: "bottom",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 203
+          lineNumber: 199
         },
         __self: this
       }));
@@ -23470,15 +23475,8 @@ function (_Component) {
   return Index;
 }(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
 
-function mapStateToProps(state) {
-  var name = state.name;
-  return {
-    name: name
-  };
-}
-
 var Extract = Object(next_router__WEBPACK_IMPORTED_MODULE_0__["withRouter"])(Index);
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_8__["connect"])(mapStateToProps)(Extract));
+/* harmony default export */ __webpack_exports__["default"] = (Extract);
     (function (Component, route) {
       if(!Component) return
       if (false) {}
@@ -23505,14 +23503,14 @@ var Extract = Object(next_router__WEBPACK_IMPORTED_MODULE_0__["withRouter"])(Ind
 /*!******************!*\
   !*** ./store.js ***!
   \******************/
-/*! exports provided: actionTypes, reducer, getModalName, initializeStore */
+/*! exports provided: actionTypes, reducer, changeModalName, initializeStore */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "actionTypes", function() { return actionTypes; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "reducer", function() { return reducer; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getModalName", function() { return getModalName; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "changeModalName", function() { return changeModalName; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "initializeStore", function() { return initializeStore; });
 /* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
 /* harmony import */ var redux_devtools_extension__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux-devtools-extension */ "./node_modules/redux-devtools-extension/index.js");
@@ -23522,10 +23520,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var exampleInitialState = {
-  name: ''
+  name: '',
+  modalVisible: false
 };
 var actionTypes = {
-  GET_MODAL_NAME: "GET_MODAL_NAME" // REDUCERS
+  CHANGE_MODAL_NAME: "CHANGE_MODAL_NAME" // REDUCERS
 
 };
 var reducer = function reducer() {
@@ -23533,11 +23532,24 @@ var reducer = function reducer() {
   var action = arguments.length > 1 ? arguments[1] : undefined;
 
   switch (action.type) {
-    case actionTypes.GET_MODAL_NAME:
+    case actionTypes.CHANGE_MODAL_NAME:
       //console.log(state)
-      console.log(action.payload);
+      //console.log(action.payload)
+      //this was done by slide before. Avoids caching of the bg loader, so it starts downcounting from 10 again
+      if (action.payload !== '') {
+        setTimeout(function () {
+          var theIfr = document.querySelector('#ifr'); //console.log(theIfr)  
+
+          if (theIfr) {
+            theIfr.style.backgroundImage = "url(static/gifs/loading2.gif?r=".concat(new Date().getTime(), ")");
+          }
+        }, 1000);
+      } //console.log(state)
+
+
       return Object.assign({}, state, {
-        name: action.payload
+        name: action.payload,
+        modalVisible: !state.modalVisible
       });
 
     default:
@@ -23545,10 +23557,10 @@ var reducer = function reducer() {
   }
 }; // ACTIONS
 
-var getModalName = function getModalName(name) {
+var changeModalName = function changeModalName(name) {
   return function (dispatch) {
     return dispatch({
-      type: actionTypes.GET_MODAL_NAME,
+      type: actionTypes.CHANGE_MODAL_NAME,
       payload: name
     });
   };
