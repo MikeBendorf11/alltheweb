@@ -162,6 +162,11 @@ class Index extends Component {
           <title>Portfolio</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" 
           />
+        <meta property="og:title" content="Projects Compilation"/>
+          <meta property="og:image" content="static/capture.png"/>
+          <meta property="og:description" content="Website Capture Screen"/>
+          <meta property="og:url" content="http://react-presentation.herokuapp.com/?or=cjnda" />
+          <meta name="theme-color" content="#F0C869" />          
           <script src="static/3dmodel/three.js"></script>
           <script src="static/3dmodel/OrbitControls.js"></script>
           <script src="static/3dmodel/GLTFLoader.js"></script>
