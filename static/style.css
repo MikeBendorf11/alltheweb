@@ -16,8 +16,10 @@ body{
   
   /* justify-content: center;
   align-items: center; */
+  width: 100%;
   min-height: 100vh;
   max-height: 100vh;
+  display: -ms-grid;
   display: grid;
   grid-template-columns: 17fr 66fr 17fr;
   grid-template-rows: 20fr 68fr 12fr;
@@ -32,6 +34,8 @@ body{
 
 .carousel{
   grid-area: carousel;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   background-color: grey;  
   border-radius: 25px;
   box-shadow: 0 0 60px 5px black;
@@ -72,10 +76,28 @@ img:hover, .carousel-caption:hover{
     }
 }
 
-#top{grid-area: top}
-#left{grid-area: left}
-#right{grid-area: right}
-#bottom{ grid-area: bottom}
+#top{
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span:3;
+  grid-area: top
+}
+#left{
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: left
+}
+#right{
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: right
+}
+#bottom{ 
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span:3;
+  grid-area: bottom
+}
 
 .modal-lg {
   max-width:unset;

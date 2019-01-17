@@ -5706,7 +5706,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      (0, _sourceMapSupport.rewriteStacktrace)(error, "C:\\Users\\mb8user\\Desktop\\Portolio-Compiled2\\.next");
+      (0, _sourceMapSupport.rewriteStacktrace)(error, "F:\\1PROGRAMMING\\repositories\\2019\\Portolio-Compiled2\\.next");
       return error;
     }
   };
@@ -17946,7 +17946,7 @@ module.exports = function(module) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\mb8user\Desktop\Portolio-Compiled2\node_modules\next\dist\client\next-dev */"./node_modules/next/dist/client/next-dev.js");
+module.exports = __webpack_require__(/*! F:\1PROGRAMMING\repositories\2019\Portolio-Compiled2\node_modules\next\dist\client\next-dev */"./node_modules/next/dist/client/next-dev.js");
 
 
 /***/ }),

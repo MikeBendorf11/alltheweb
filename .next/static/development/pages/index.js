@@ -17,7 +17,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _items__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./items */ "./components/items.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../store */ "./store.js");
-var _jsxFileName = "C:\\Users\\mb8user\\Desktop\\Portolio-Compiled2\\components\\Popup.js";
+var _jsxFileName = "F:\\1PROGRAMMING\\repositories\\2019\\Portolio-Compiled2\\components\\Popup.js";
 
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -118,7 +118,7 @@ function (_Component) {
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
         styleId: "1527947274",
-        css: "iframe{background-color:white;background-position:50% 50%;background-size:200px;background-repeat:no-repeat;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcbWI4dXNlclxcRGVza3RvcFxcUG9ydG9saW8tQ29tcGlsZWQyXFxjb21wb25lbnRzXFxQb3B1cC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFvRFMsQUFJa0MsdUJBQ0ssNEJBQ04sc0JBQ00sNEJBQzlCIiwiZmlsZSI6IkM6XFxVc2Vyc1xcbWI4dXNlclxcRGVza3RvcFxcUG9ydG9saW8tQ29tcGlsZWQyXFxjb21wb25lbnRzXFxQb3B1cC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCwgeyBDb21wb25lbnQgfSBmcm9tICdyZWFjdCc7XHJcbmltcG9ydCB7XHJcbiAgQnV0dG9uLFxyXG4gIE1vZGFsSGVhZGVyLFxyXG4gIE1vZGFsLFxyXG4gIE1vZGFsQm9keSxcclxufSBmcm9tICdyZWFjdHN0cmFwJztcclxuaW1wb3J0IGl0ZW1zIGZyb20gJy4vaXRlbXMnO1xyXG5pbXBvcnQgeyBjb25uZWN0IH0gZnJvbSAncmVhY3QtcmVkdXgnO1xyXG5pbXBvcnQge2NoYW5nZU1vZGFsTmFtZX0gZnJvbSAnLi4vc3RvcmUnO1xyXG5cclxuY2xhc3MgUG9wdXAgZXh0ZW5kcyBDb21wb25lbnQge1xyXG4gIGNvbnN0cnVjdG9yKHByb3BzKSB7XHJcbiAgICBzdXBlcihwcm9wcyk7XHJcbiAgICB0aGlzLnRvZ2dsZSA9IHRoaXMudG9nZ2xlLmJpbmQodGhpcyk7XHJcbiAgICBcclxuICB9XHJcbiAgdG9nZ2xlKGV2ZW50KSB7XHJcbiAgICAvL3RoaXMucHJvcHMuYWN0aXZhdGVQb3AoZXZlbnQpXHJcbiAgICAvL3NldCBnbG9iYWwgbmFtZSBiYWNrIHRvICcnXHJcbiAgICB0aGlzLnByb3BzLmNoYW5nZU1vZGFsTmFtZSgnJylcclxuICB9IFxyXG4gIC8vIGNvbXBvbmVudERpZFVwZGF0ZSgpe1xyXG4gIC8vICAgY29uc29sZS5sb2codGhpcy5wcm9wcyk7XHJcbiAgLy8gfVxyXG4gIHJlbmRlcigpIHtcclxuICAgIGNvbnN0IHttb2RhbFZpc2libGV9ID0gdGhpcy5wcm9wcztcclxuICAgIGNvbnN0IHtuYW1lfSA9IHRoaXMucHJvcHM7XHJcblxyXG4gICAgbGV0IHVybDtcclxuICAgIC8vbGV0IG5hbWUgPSB0aGlzLnByb3BzLmNvbnRlbnQ7XHJcbiAgICBcclxuICAgIGl0ZW1zLmZvckVhY2goaT0+e1xyXG4gICAgICBpLm5hbWUgPT0gbmFtZT8gdXJsID0gaS5saW5rIDogbnVsbDtcclxuICAgIH0pXHJcblxyXG4gICAgcmV0dXJuICggXHJcbiAgICAgICAgPE1vZGFsXHJcbiAgICAgICAgXHJcbiAgICAgICAgICBpc09wZW49e21vZGFsVmlzaWJsZX0gLy93YXMgaXNBY3RpdmUgY29tbWluZyBmcm9tIGluZGV4XHJcbiAgICAgICAgICB0b2dnbGU9e3RoaXMudG9nZ2xlfVxyXG4gICAgICAgICAgY2xhc3NOYW1lPXt0aGlzLnByb3BzLmNsYXNzTmFtZX1cclxuICAgICAgICAgIHNpemU9eydsZyd9XHJcbiAgICAgICAgICBpZD17J2RpYWxvZy0nICsgbmFtZX0+XHJcbiAgICAgICAgICA8TW9kYWxIZWFkZXIgdG9nZ2xlPXt0aGlzLnRvZ2dsZX0+XHJcbiAgICAgICAgICAgIDxhIGhyZWY9e3VybH0gdGFyZ2V0PVwiX25ld1wiPiB7dXJsfTwvYT5cclxuICAgICAgICAgIDwvTW9kYWxIZWFkZXI+XHJcbiAgICAgICAgICA8aWZyYW1lXHJcbiAgICAgICAgICAgIGlkPVwiaWZyXCJcclxuICAgICAgICAgICAgc3JjPXt1cmx9PlxyXG4gICAgICAgICAgPC9pZnJhbWU+XHJcbiAgICAgICAgICA8c3R5bGUganN4IGdsb2JhbD5cclxuICAgICB7ICAgYFxyXG4gICAgICAgIGlmcmFtZXtcclxuICAgICAgICAgIFxyXG4gICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XHJcbiAgICAgICAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiA1MCUgNTAlO1xyXG4gICAgICAgICAgYmFja2dyb3VuZC1zaXplOiAyMDBweDtcclxuICAgICAgICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XHJcbiAgICAgICAgfVxyXG4gICAgICAgIGB9XHJcbiAgICAgIDwvc3R5bGU+XHJcbiAgICAgICAgPC9Nb2RhbD5cclxuICAgICk7XHJcbiAgfVxyXG59XHJcbmZ1bmN0aW9uIG1hcFN0YXRlVG9Qcm9wcyhzdGF0ZSl7XHJcbiAgY29uc3Qge25hbWUsIG1vZGFsVmlzaWJsZX0gPSBzdGF0ZVxyXG4gIHJldHVybiB7bmFtZSwgbW9kYWxWaXNpYmxlfVxyXG59XHJcbmV4cG9ydCBkZWZhdWx0IGNvbm5lY3QobWFwU3RhdGVUb1Byb3BzLHtjaGFuZ2VNb2RhbE5hbWV9KShQb3B1cCk7Il19 */\n/*@ sourceURL=C:\\Users\\mb8user\\Desktop\\Portolio-Compiled2\\components\\Popup.js */",
+        css: "iframe{background-color:white;background-position:50% 50%;background-size:200px;background-repeat:no-repeat;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkY6XFwxUFJPR1JBTU1JTkdcXHJlcG9zaXRvcmllc1xcMjAxOVxcUG9ydG9saW8tQ29tcGlsZWQyXFxjb21wb25lbnRzXFxQb3B1cC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFvRFMsQUFJa0MsdUJBQ0ssNEJBQ04sc0JBQ00sNEJBQzlCIiwiZmlsZSI6IkY6XFwxUFJPR1JBTU1JTkdcXHJlcG9zaXRvcmllc1xcMjAxOVxcUG9ydG9saW8tQ29tcGlsZWQyXFxjb21wb25lbnRzXFxQb3B1cC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCwgeyBDb21wb25lbnQgfSBmcm9tICdyZWFjdCc7XHJcbmltcG9ydCB7XHJcbiAgQnV0dG9uLFxyXG4gIE1vZGFsSGVhZGVyLFxyXG4gIE1vZGFsLFxyXG4gIE1vZGFsQm9keSxcclxufSBmcm9tICdyZWFjdHN0cmFwJztcclxuaW1wb3J0IGl0ZW1zIGZyb20gJy4vaXRlbXMnO1xyXG5pbXBvcnQgeyBjb25uZWN0IH0gZnJvbSAncmVhY3QtcmVkdXgnO1xyXG5pbXBvcnQge2NoYW5nZU1vZGFsTmFtZX0gZnJvbSAnLi4vc3RvcmUnO1xyXG5cclxuY2xhc3MgUG9wdXAgZXh0ZW5kcyBDb21wb25lbnQge1xyXG4gIGNvbnN0cnVjdG9yKHByb3BzKSB7XHJcbiAgICBzdXBlcihwcm9wcyk7XHJcbiAgICB0aGlzLnRvZ2dsZSA9IHRoaXMudG9nZ2xlLmJpbmQodGhpcyk7XHJcbiAgICBcclxuICB9XHJcbiAgdG9nZ2xlKGV2ZW50KSB7XHJcbiAgICAvL3RoaXMucHJvcHMuYWN0aXZhdGVQb3AoZXZlbnQpXHJcbiAgICAvL3NldCBnbG9iYWwgbmFtZSBiYWNrIHRvICcnXHJcbiAgICB0aGlzLnByb3BzLmNoYW5nZU1vZGFsTmFtZSgnJylcclxuICB9IFxyXG4gIC8vIGNvbXBvbmVudERpZFVwZGF0ZSgpe1xyXG4gIC8vICAgY29uc29sZS5sb2codGhpcy5wcm9wcyk7XHJcbiAgLy8gfVxyXG4gIHJlbmRlcigpIHtcclxuICAgIGNvbnN0IHttb2RhbFZpc2libGV9ID0gdGhpcy5wcm9wcztcclxuICAgIGNvbnN0IHtuYW1lfSA9IHRoaXMucHJvcHM7XHJcblxyXG4gICAgbGV0IHVybDtcclxuICAgIC8vbGV0IG5hbWUgPSB0aGlzLnByb3BzLmNvbnRlbnQ7XHJcbiAgICBcclxuICAgIGl0ZW1zLmZvckVhY2goaT0+e1xyXG4gICAgICBpLm5hbWUgPT0gbmFtZT8gdXJsID0gaS5saW5rIDogbnVsbDtcclxuICAgIH0pXHJcblxyXG4gICAgcmV0dXJuICggXHJcbiAgICAgICAgPE1vZGFsXHJcbiAgICAgICAgXHJcbiAgICAgICAgICBpc09wZW49e21vZGFsVmlzaWJsZX0gLy93YXMgaXNBY3RpdmUgY29tbWluZyBmcm9tIGluZGV4XHJcbiAgICAgICAgICB0b2dnbGU9e3RoaXMudG9nZ2xlfVxyXG4gICAgICAgICAgY2xhc3NOYW1lPXt0aGlzLnByb3BzLmNsYXNzTmFtZX1cclxuICAgICAgICAgIHNpemU9eydsZyd9XHJcbiAgICAgICAgICBpZD17J2RpYWxvZy0nICsgbmFtZX0+XHJcbiAgICAgICAgICA8TW9kYWxIZWFkZXIgdG9nZ2xlPXt0aGlzLnRvZ2dsZX0+XHJcbiAgICAgICAgICAgIDxhIGhyZWY9e3VybH0gdGFyZ2V0PVwiX25ld1wiPiB7dXJsfTwvYT5cclxuICAgICAgICAgIDwvTW9kYWxIZWFkZXI+XHJcbiAgICAgICAgICA8aWZyYW1lXHJcbiAgICAgICAgICAgIGlkPVwiaWZyXCJcclxuICAgICAgICAgICAgc3JjPXt1cmx9PlxyXG4gICAgICAgICAgPC9pZnJhbWU+XHJcbiAgICAgICAgICA8c3R5bGUganN4IGdsb2JhbD5cclxuICAgICB7ICAgYFxyXG4gICAgICAgIGlmcmFtZXtcclxuICAgICAgICAgIFxyXG4gICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XHJcbiAgICAgICAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiA1MCUgNTAlO1xyXG4gICAgICAgICAgYmFja2dyb3VuZC1zaXplOiAyMDBweDtcclxuICAgICAgICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XHJcbiAgICAgICAgfVxyXG4gICAgICAgIGB9XHJcbiAgICAgIDwvc3R5bGU+XHJcbiAgICAgICAgPC9Nb2RhbD5cclxuICAgICk7XHJcbiAgfVxyXG59XHJcbmZ1bmN0aW9uIG1hcFN0YXRlVG9Qcm9wcyhzdGF0ZSl7XHJcbiAgY29uc3Qge25hbWUsIG1vZGFsVmlzaWJsZX0gPSBzdGF0ZVxyXG4gIHJldHVybiB7bmFtZSwgbW9kYWxWaXNpYmxlfVxyXG59XHJcbmV4cG9ydCBkZWZhdWx0IGNvbm5lY3QobWFwU3RhdGVUb1Byb3BzLHtjaGFuZ2VNb2RhbE5hbWV9KShQb3B1cCk7Il19 */\n/*@ sourceURL=F:\\1PROGRAMMING\\repositories\\2019\\Portolio-Compiled2\\components\\Popup.js */",
         __self: this
       }));
     }
@@ -158,7 +158,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Tooltip__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Tooltip */ "./components/Tooltip.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../store */ "./store.js");
-var _jsxFileName = "C:\\Users\\mb8user\\Desktop\\Portolio-Compiled2\\components\\Slides.js";
+var _jsxFileName = "F:\\1PROGRAMMING\\repositories\\2019\\Portolio-Compiled2\\components\\Slides.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -398,7 +398,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/dist/reactstrap.es.js");
-var _jsxFileName = "C:\\Users\\mb8user\\Desktop\\Portolio-Compiled2\\components\\Tooltip.js";
+var _jsxFileName = "F:\\1PROGRAMMING\\repositories\\2019\\Portolio-Compiled2\\components\\Tooltip.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -23155,7 +23155,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Popup__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Popup */ "./components/Popup.js");
 /* harmony import */ var _components_Slides__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Slides */ "./components/Slides.js");
 /* harmony import */ var _components_Tooltip__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Tooltip */ "./components/Tooltip.js");
-var _jsxFileName = "C:\\Users\\mb8user\\Desktop\\Portolio-Compiled2\\pages\\index.js";
+var _jsxFileName = "F:\\1PROGRAMMING\\repositories\\2019\\Portolio-Compiled2\\pages\\index.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -23235,12 +23235,14 @@ function (_Component) {
         var midPercent = (maxHeight - currentHeight) / midFactor;
         var bottomPercent = (maxHeight - currentHeight) / bottomFactor; //side spaces go from 17% to 0%
 
+        cont.style.msGridColumns = "".concat((17 - sidePercent).toFixed(1), "fr \n        66fr \n        ").concat((17 - sidePercent).toFixed(1), "fr");
         cont.style.gridTemplateColumns = "".concat((17 - sidePercent).toFixed(1), "fr \n         66fr \n         ").concat((17 - sidePercent).toFixed(1), "fr"); //top and bottom go to 25%, midHeight(video) takes remaining 50%
         //midwidth is irrelevant since both sides have 0%
 
+        cont.style.msGridRows = "".concat((20 + topPercent).toFixed(1), "fr \n        ").concat((68 - midPercent).toFixed(1), "fr \n        ").concat((12 + bottomPercent).toFixed(1), "fr");
         cont.style.gridTemplateRows = "".concat((20 + topPercent).toFixed(1), "fr \n         ").concat((68 - midPercent).toFixed(1), "fr \n         ").concat((12 + bottomPercent).toFixed(1), "fr"); //all images height has to match mid% 
 
-        images.forEach(function (img) {
+        Array.from(images).forEach(function (img) {
           img.style.height = "".concat(69 - midPercent, "vh");
         });
       }
@@ -23344,19 +23346,19 @@ function (_Component) {
         id: "container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 160
+          lineNumber: 168
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 161
+          lineNumber: 169
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("title", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 162
+          lineNumber: 170
         },
         __self: this
       }, "Portfolio"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
@@ -23364,35 +23366,75 @@ function (_Component) {
         content: "initial-scale=1.0, width=device-width",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 163
+          lineNumber: 171
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+        property: "og:title",
+        content: "Projects Compilation",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 173
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+        property: "og:image",
+        content: "static/capture.png",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 174
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+        property: "og:description",
+        content: "Website Capture Screen",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 175
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+        property: "og:url",
+        content: "http://react-presentation.herokuapp.com/?or=cjnda",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 176
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+        name: "theme-color",
+        content: "#F0C869",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 177
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         src: "static/3dmodel/three.js",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 165
+          lineNumber: 178
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         src: "static/3dmodel/OrbitControls.js",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 166
+          lineNumber: 179
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         src: "static/3dmodel/GLTFLoader.js",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 167
+          lineNumber: 180
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         src: "static/3dmodel/WebGL.js",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 168
+          lineNumber: 181
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Slides__WEBPACK_IMPORTED_MODULE_6__["default"] // onSlideClick={this.onSlideClick} 
@@ -23401,7 +23443,7 @@ function (_Component) {
         order: this.props.router.query.or,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 173
+          lineNumber: 186
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Popup__WEBPACK_IMPORTED_MODULE_5__["default"] //activatePop={this.activatePop} 
@@ -23410,14 +23452,14 @@ function (_Component) {
         content: this.state.clickedSlide,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 177
+          lineNumber: 190
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         id: "top",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 181
+          lineNumber: 194
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Tooltip__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -23426,14 +23468,14 @@ function (_Component) {
         current: 'top',
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 182
+          lineNumber: 195
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         id: "left",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 187
+          lineNumber: 200
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Tooltip__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -23442,14 +23484,14 @@ function (_Component) {
         current: 'left',
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 188
+          lineNumber: 201
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         id: "right",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 193
+          lineNumber: 206
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Tooltip__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -23458,14 +23500,14 @@ function (_Component) {
         current: 'right',
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 194
+          lineNumber: 207
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         id: "bottom",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 199
+          lineNumber: 212
         },
         __self: this
       }));

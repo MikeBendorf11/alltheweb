@@ -15,7 +15,7 @@
       "publicPath": "static/chunks/commons.db789d18cace20c00c90.js"
     }
   ],
-  "../modules/_core": [
+  "../../modules/_core": [
     {
       "id": 3,
       "name": "./node_modules/core-js/library/modules/_core.js",
@@ -127,7 +127,7 @@
       "publicPath": "static/chunks/commons.db789d18cace20c00c90.js"
     }
   ],
-  "./defineProperty": [
+  "@babel/runtime-corejs2/helpers/defineProperty": [
     {
       "id": 17,
       "name": "./node_modules/@babel/runtime-corejs2/helpers/defineProperty.js",

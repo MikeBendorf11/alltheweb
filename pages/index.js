@@ -25,7 +25,7 @@ class Index extends Component {
     /* Adaptive layout using Grid and percentages/fractions */
     var cont = document.querySelector('#container');
     var images = document.querySelectorAll('.images');
-    function windowChange(){
+    function windowChange(){ 
       //document.body.id = 'theBody';
       var currentWidth = window.innerWidth;
       var currentHeight = window.innerHeight;
@@ -48,18 +48,26 @@ class Index extends Component {
       var midPercent = (maxHeight - currentHeight)/midFactor;
       var bottomPercent = (maxHeight - currentHeight)/bottomFactor;
       //side spaces go from 17% to 0%
+      cont.style.msGridColumns = 
+        `${(17-sidePercent).toFixed(1)}fr 
+        66fr 
+        ${(17-sidePercent).toFixed(1)}fr`      
       cont.style.gridTemplateColumns = 
         `${(17-sidePercent).toFixed(1)}fr 
          66fr 
          ${(17-sidePercent).toFixed(1)}fr`
       //top and bottom go to 25%, midHeight(video) takes remaining 50%
       //midwidth is irrelevant since both sides have 0%
+      cont.style.msGridRows = 
+        `${(20+topPercent).toFixed(1)}fr 
+        ${(68-midPercent).toFixed(1)}fr 
+        ${(12+bottomPercent).toFixed(1)}fr`      
       cont.style.gridTemplateRows = 
         `${(20+topPercent).toFixed(1)}fr 
          ${(68-midPercent).toFixed(1)}fr 
          ${(12+bottomPercent).toFixed(1)}fr`
       //all images height has to match mid% 
-      images.forEach(img => {
+      Array.from(images).forEach(img => {
         img.style.height = `${(69-midPercent)}vh`  
       });
     }
