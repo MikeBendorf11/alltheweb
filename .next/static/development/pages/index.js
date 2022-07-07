@@ -17,7 +17,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _items__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./items */ "./components/items.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../store */ "./store.js");
-var _jsxFileName = "F:\\1PROGRAMMING\\repositories\\2019\\Portolio-Compiled2\\components\\Popup.js";
+var _jsxFileName = "C:\\Users\\mike\\Desktop\\alltheweb\\components\\Popup.js";
 
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -118,7 +118,7 @@ function (_Component) {
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
         styleId: "1527947274",
-        css: "iframe{background-color:white;background-position:50% 50%;background-size:200px;background-repeat:no-repeat;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkY6XFwxUFJPR1JBTU1JTkdcXHJlcG9zaXRvcmllc1xcMjAxOVxcUG9ydG9saW8tQ29tcGlsZWQyXFxjb21wb25lbnRzXFxQb3B1cC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFvRFMsQUFJa0MsdUJBQ0ssNEJBQ04sc0JBQ00sNEJBQzlCIiwiZmlsZSI6IkY6XFwxUFJPR1JBTU1JTkdcXHJlcG9zaXRvcmllc1xcMjAxOVxcUG9ydG9saW8tQ29tcGlsZWQyXFxjb21wb25lbnRzXFxQb3B1cC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCwgeyBDb21wb25lbnQgfSBmcm9tICdyZWFjdCc7XHJcbmltcG9ydCB7XHJcbiAgQnV0dG9uLFxyXG4gIE1vZGFsSGVhZGVyLFxyXG4gIE1vZGFsLFxyXG4gIE1vZGFsQm9keSxcclxufSBmcm9tICdyZWFjdHN0cmFwJztcclxuaW1wb3J0IGl0ZW1zIGZyb20gJy4vaXRlbXMnO1xyXG5pbXBvcnQgeyBjb25uZWN0IH0gZnJvbSAncmVhY3QtcmVkdXgnO1xyXG5pbXBvcnQge2NoYW5nZU1vZGFsTmFtZX0gZnJvbSAnLi4vc3RvcmUnO1xyXG5cclxuY2xhc3MgUG9wdXAgZXh0ZW5kcyBDb21wb25lbnQge1xyXG4gIGNvbnN0cnVjdG9yKHByb3BzKSB7XHJcbiAgICBzdXBlcihwcm9wcyk7XHJcbiAgICB0aGlzLnRvZ2dsZSA9IHRoaXMudG9nZ2xlLmJpbmQodGhpcyk7XHJcbiAgICBcclxuICB9XHJcbiAgdG9nZ2xlKGV2ZW50KSB7XHJcbiAgICAvL3RoaXMucHJvcHMuYWN0aXZhdGVQb3AoZXZlbnQpXHJcbiAgICAvL3NldCBnbG9iYWwgbmFtZSBiYWNrIHRvICcnXHJcbiAgICB0aGlzLnByb3BzLmNoYW5nZU1vZGFsTmFtZSgnJylcclxuICB9IFxyXG4gIC8vIGNvbXBvbmVudERpZFVwZGF0ZSgpe1xyXG4gIC8vICAgY29uc29sZS5sb2codGhpcy5wcm9wcyk7XHJcbiAgLy8gfVxyXG4gIHJlbmRlcigpIHtcclxuICAgIGNvbnN0IHttb2RhbFZpc2libGV9ID0gdGhpcy5wcm9wcztcclxuICAgIGNvbnN0IHtuYW1lfSA9IHRoaXMucHJvcHM7XHJcblxyXG4gICAgbGV0IHVybDtcclxuICAgIC8vbGV0IG5hbWUgPSB0aGlzLnByb3BzLmNvbnRlbnQ7XHJcbiAgICBcclxuICAgIGl0ZW1zLmZvckVhY2goaT0+e1xyXG4gICAgICBpLm5hbWUgPT0gbmFtZT8gdXJsID0gaS5saW5rIDogbnVsbDtcclxuICAgIH0pXHJcblxyXG4gICAgcmV0dXJuICggXHJcbiAgICAgICAgPE1vZGFsXHJcbiAgICAgICAgXHJcbiAgICAgICAgICBpc09wZW49e21vZGFsVmlzaWJsZX0gLy93YXMgaXNBY3RpdmUgY29tbWluZyBmcm9tIGluZGV4XHJcbiAgICAgICAgICB0b2dnbGU9e3RoaXMudG9nZ2xlfVxyXG4gICAgICAgICAgY2xhc3NOYW1lPXt0aGlzLnByb3BzLmNsYXNzTmFtZX1cclxuICAgICAgICAgIHNpemU9eydsZyd9XHJcbiAgICAgICAgICBpZD17J2RpYWxvZy0nICsgbmFtZX0+XHJcbiAgICAgICAgICA8TW9kYWxIZWFkZXIgdG9nZ2xlPXt0aGlzLnRvZ2dsZX0+XHJcbiAgICAgICAgICAgIDxhIGhyZWY9e3VybH0gdGFyZ2V0PVwiX25ld1wiPiB7dXJsfTwvYT5cclxuICAgICAgICAgIDwvTW9kYWxIZWFkZXI+XHJcbiAgICAgICAgICA8aWZyYW1lXHJcbiAgICAgICAgICAgIGlkPVwiaWZyXCJcclxuICAgICAgICAgICAgc3JjPXt1cmx9PlxyXG4gICAgICAgICAgPC9pZnJhbWU+XHJcbiAgICAgICAgICA8c3R5bGUganN4IGdsb2JhbD5cclxuICAgICB7ICAgYFxyXG4gICAgICAgIGlmcmFtZXtcclxuICAgICAgICAgIFxyXG4gICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XHJcbiAgICAgICAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiA1MCUgNTAlO1xyXG4gICAgICAgICAgYmFja2dyb3VuZC1zaXplOiAyMDBweDtcclxuICAgICAgICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XHJcbiAgICAgICAgfVxyXG4gICAgICAgIGB9XHJcbiAgICAgIDwvc3R5bGU+XHJcbiAgICAgICAgPC9Nb2RhbD5cclxuICAgICk7XHJcbiAgfVxyXG59XHJcbmZ1bmN0aW9uIG1hcFN0YXRlVG9Qcm9wcyhzdGF0ZSl7XHJcbiAgY29uc3Qge25hbWUsIG1vZGFsVmlzaWJsZX0gPSBzdGF0ZVxyXG4gIHJldHVybiB7bmFtZSwgbW9kYWxWaXNpYmxlfVxyXG59XHJcbmV4cG9ydCBkZWZhdWx0IGNvbm5lY3QobWFwU3RhdGVUb1Byb3BzLHtjaGFuZ2VNb2RhbE5hbWV9KShQb3B1cCk7Il19 */\n/*@ sourceURL=F:\\1PROGRAMMING\\repositories\\2019\\Portolio-Compiled2\\components\\Popup.js */",
+        css: "iframe{background-color:white;background-position:50% 50%;background-size:200px;background-repeat:no-repeat;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcbWlrZVxcRGVza3RvcFxcYWxsdGhld2ViXFxjb21wb25lbnRzXFxQb3B1cC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFvRFMsQUFJa0MsdUJBQ0ssNEJBQ04sc0JBQ00sNEJBQzlCIiwiZmlsZSI6IkM6XFxVc2Vyc1xcbWlrZVxcRGVza3RvcFxcYWxsdGhld2ViXFxjb21wb25lbnRzXFxQb3B1cC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCwgeyBDb21wb25lbnQgfSBmcm9tICdyZWFjdCc7XHJcbmltcG9ydCB7XHJcbiAgQnV0dG9uLFxyXG4gIE1vZGFsSGVhZGVyLFxyXG4gIE1vZGFsLFxyXG4gIE1vZGFsQm9keSxcclxufSBmcm9tICdyZWFjdHN0cmFwJztcclxuaW1wb3J0IGl0ZW1zIGZyb20gJy4vaXRlbXMnO1xyXG5pbXBvcnQgeyBjb25uZWN0IH0gZnJvbSAncmVhY3QtcmVkdXgnO1xyXG5pbXBvcnQge2NoYW5nZU1vZGFsTmFtZX0gZnJvbSAnLi4vc3RvcmUnO1xyXG5cclxuY2xhc3MgUG9wdXAgZXh0ZW5kcyBDb21wb25lbnQge1xyXG4gIGNvbnN0cnVjdG9yKHByb3BzKSB7XHJcbiAgICBzdXBlcihwcm9wcyk7XHJcbiAgICB0aGlzLnRvZ2dsZSA9IHRoaXMudG9nZ2xlLmJpbmQodGhpcyk7XHJcbiAgICBcclxuICB9XHJcbiAgdG9nZ2xlKGV2ZW50KSB7XHJcbiAgICAvL3RoaXMucHJvcHMuYWN0aXZhdGVQb3AoZXZlbnQpXHJcbiAgICAvL3NldCBnbG9iYWwgbmFtZSBiYWNrIHRvICcnXHJcbiAgICB0aGlzLnByb3BzLmNoYW5nZU1vZGFsTmFtZSgnJylcclxuICB9IFxyXG4gIC8vIGNvbXBvbmVudERpZFVwZGF0ZSgpe1xyXG4gIC8vICAgY29uc29sZS5sb2codGhpcy5wcm9wcyk7XHJcbiAgLy8gfVxyXG4gIHJlbmRlcigpIHtcclxuICAgIGNvbnN0IHttb2RhbFZpc2libGV9ID0gdGhpcy5wcm9wcztcclxuICAgIGNvbnN0IHtuYW1lfSA9IHRoaXMucHJvcHM7XHJcblxyXG4gICAgbGV0IHVybDtcclxuICAgIC8vbGV0IG5hbWUgPSB0aGlzLnByb3BzLmNvbnRlbnQ7XHJcbiAgICBcclxuICAgIGl0ZW1zLmZvckVhY2goaT0+e1xyXG4gICAgICBpLm5hbWUgPT0gbmFtZT8gdXJsID0gaS5saW5rIDogbnVsbDtcclxuICAgIH0pXHJcblxyXG4gICAgcmV0dXJuICggXHJcbiAgICAgICAgPE1vZGFsXHJcbiAgICAgICAgXHJcbiAgICAgICAgICBpc09wZW49e21vZGFsVmlzaWJsZX0gLy93YXMgaXNBY3RpdmUgY29tbWluZyBmcm9tIGluZGV4XHJcbiAgICAgICAgICB0b2dnbGU9e3RoaXMudG9nZ2xlfVxyXG4gICAgICAgICAgY2xhc3NOYW1lPXt0aGlzLnByb3BzLmNsYXNzTmFtZX1cclxuICAgICAgICAgIHNpemU9eydsZyd9XHJcbiAgICAgICAgICBpZD17J2RpYWxvZy0nICsgbmFtZX0+XHJcbiAgICAgICAgICA8TW9kYWxIZWFkZXIgdG9nZ2xlPXt0aGlzLnRvZ2dsZX0+XHJcbiAgICAgICAgICAgIDxhIGhyZWY9e3VybH0gdGFyZ2V0PVwiX25ld1wiPiB7dXJsfTwvYT5cclxuICAgICAgICAgIDwvTW9kYWxIZWFkZXI+XHJcbiAgICAgICAgICA8aWZyYW1lXHJcbiAgICAgICAgICAgIGlkPVwiaWZyXCJcclxuICAgICAgICAgICAgc3JjPXt1cmx9PlxyXG4gICAgICAgICAgPC9pZnJhbWU+XHJcbiAgICAgICAgICA8c3R5bGUganN4IGdsb2JhbD5cclxuICAgICB7ICAgYFxyXG4gICAgICAgIGlmcmFtZXtcclxuICAgICAgICAgIFxyXG4gICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XHJcbiAgICAgICAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiA1MCUgNTAlO1xyXG4gICAgICAgICAgYmFja2dyb3VuZC1zaXplOiAyMDBweDtcclxuICAgICAgICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XHJcbiAgICAgICAgfVxyXG4gICAgICAgIGB9XHJcbiAgICAgIDwvc3R5bGU+XHJcbiAgICAgICAgPC9Nb2RhbD5cclxuICAgICk7XHJcbiAgfVxyXG59XHJcbmZ1bmN0aW9uIG1hcFN0YXRlVG9Qcm9wcyhzdGF0ZSl7XHJcbiAgY29uc3Qge25hbWUsIG1vZGFsVmlzaWJsZX0gPSBzdGF0ZVxyXG4gIHJldHVybiB7bmFtZSwgbW9kYWxWaXNpYmxlfVxyXG59XHJcbmV4cG9ydCBkZWZhdWx0IGNvbm5lY3QobWFwU3RhdGVUb1Byb3BzLHtjaGFuZ2VNb2RhbE5hbWV9KShQb3B1cCk7Il19 */\n/*@ sourceURL=C:\\Users\\mike\\Desktop\\alltheweb\\components\\Popup.js */",
         __self: this
       }));
     }
@@ -158,7 +158,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Tooltip__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Tooltip */ "./components/Tooltip.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../store */ "./store.js");
-var _jsxFileName = "F:\\1PROGRAMMING\\repositories\\2019\\Portolio-Compiled2\\components\\Slides.js";
+var _jsxFileName = "C:\\Users\\mike\\Desktop\\alltheweb\\components\\Slides.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -269,7 +269,7 @@ function (_Component) {
 
       if (order) {
         for (var i = 0; i < order.length; i++) {
-          order[i] == 'a' ? arr.push(_items__WEBPACK_IMPORTED_MODULE_0__["default"][0]) : order[i] == 'n' ? arr.push(_items__WEBPACK_IMPORTED_MODULE_0__["default"][1]) : order[i] == 'c' ? arr.push(_items__WEBPACK_IMPORTED_MODULE_0__["default"][2]) : order[i] == 'd' ? arr.push(_items__WEBPACK_IMPORTED_MODULE_0__["default"][3]) : order[i] == 'j' ? arr.push(_items__WEBPACK_IMPORTED_MODULE_0__["default"][4]) : console.log('not a match');
+          order[i] == 'r' ? arr.push(_items__WEBPACK_IMPORTED_MODULE_0__["default"][0]) : order[i] == 'n' ? arr.push(_items__WEBPACK_IMPORTED_MODULE_0__["default"][1]) : order[i] == 'c' ? arr.push(_items__WEBPACK_IMPORTED_MODULE_0__["default"][2]) : order[i] == 'd' ? arr.push(_items__WEBPACK_IMPORTED_MODULE_0__["default"][3]) : order[i] == 'j' ? arr.push(_items__WEBPACK_IMPORTED_MODULE_0__["default"][4]) : console.log('not a match');
         }
       } else {
         arr = _items__WEBPACK_IMPORTED_MODULE_0__["default"];
@@ -286,41 +286,21 @@ function (_Component) {
             lineNumber: 86
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Tooltip__WEBPACK_IMPORTED_MODULE_3__["default"], {
-          position: 'top',
-          current: 'img-' + item.name,
-          text: 'Click to open the app',
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 90
-          },
-          __self: this
-        }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Tooltip__WEBPACK_IMPORTED_MODULE_3__["default"], {
-          position: 'bottom',
-          current: 'cap-' + item.name,
-          text: 'Click to open the app',
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 94
-          },
-          __self: this
-        }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-          onClick: _this2.passId.bind(_this2, item.name),
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
           src: item.src,
           alt: item.altText,
           id: 'img-' + item.name,
           className: 'images',
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 99
+            lineNumber: 90
           },
           __self: this
         }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-          onClick: _this2.passId.bind(_this2, item.name),
           id: 'cap-' + item.name,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 105
+            lineNumber: 95
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["CarouselCaption"], {
@@ -328,7 +308,7 @@ function (_Component) {
           captionHeader: item.title,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 108
+            lineNumber: 98
           },
           __self: this
         })));
@@ -342,7 +322,7 @@ function (_Component) {
         ride: 'carousel',
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 117
+          lineNumber: 107
         },
         __self: this
       }, slides, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["CarouselControl"], {
@@ -352,7 +332,7 @@ function (_Component) {
         onClickHandler: this.previous,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 127
+          lineNumber: 116
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["CarouselControl"], {
@@ -362,7 +342,7 @@ function (_Component) {
         onClickHandler: this.next,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 128
+          lineNumber: 117
         },
         __self: this
       }));
@@ -398,7 +378,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/dist/reactstrap.es.js");
-var _jsxFileName = "F:\\1PROGRAMMING\\repositories\\2019\\Portolio-Compiled2\\components\\Tooltip.js";
+var _jsxFileName = "C:\\Users\\mike\\Desktop\\alltheweb\\components\\Tooltip.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -487,18 +467,18 @@ function (_React$Component) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 var items = [{
-  name: 'a',
+  name: 'r',
   src: 'static/gifs/angular2.gif',
-  altText: 'Angular',
-  title: 'Angular',
-  caption: 'Typescript, Vue, Ionic, Axios',
+  altText: 'React',
+  title: 'React',
+  caption: 'Typescript, NextJs, Async',
   link: 'https://crypto-angular.herokuapp.com'
 }, {
   name: 'n',
   src: 'static/gifs/node2.gif',
   altText: 'Node',
   title: 'Node',
-  caption: 'MongoDB, Express, EJS, creating APIs',
+  caption: 'noSQL, Express, REST, Microservices',
   link: 'https://pizza-order-node.herokuapp.com'
 }, {
   name: 'c',
@@ -512,13 +492,13 @@ var items = [{
   src: 'static/gifs/design4.gif',
   altText: 'Design',
   title: 'Design',
-  caption: 'Responsive, Photoshop, 3d Modeling',
+  caption: 'Responsive, Scss, Sass',
   link: 'https://mb11.info/design/gallery.html'
 }, {
   name: 'j',
   src: 'static/gifs/chapp2.gif',
   altText: 'Javascript',
-  caption: 'Async, ES6, Jquery, PWAs, Canvas, WebGL',
+  caption: 'PWAs, Canvas, WebGL',
   title: 'Javascript',
   link: 'https://mb11.info/chapp'
 }];
@@ -7964,12 +7944,12 @@ module.exports = __webpack_require__(/*! ./dist/lib/router */ "./node_modules/ne
 
 /***/ "./node_modules/object-assign/index.js":
 /*!***************************************************************************************************!*\
-  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_831a3634f66cb1dada0c ***!
+  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_b2d9fd95b535cd8bf589 ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_831a3634f66cb1dada0c */ "dll-reference dll_831a3634f66cb1dada0c"))("./node_modules/object-assign/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_b2d9fd95b535cd8bf589 */ "dll-reference dll_b2d9fd95b535cd8bf589"))("./node_modules/object-assign/index.js");
 
 /***/ }),
 
@@ -10756,12 +10736,12 @@ process.umask = function() { return 0; };
 
 /***/ "./node_modules/prop-types/checkPropTypes.js":
 /*!*********************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_831a3634f66cb1dada0c ***!
+  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_b2d9fd95b535cd8bf589 ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_831a3634f66cb1dada0c */ "dll-reference dll_831a3634f66cb1dada0c"))("./node_modules/prop-types/checkPropTypes.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_b2d9fd95b535cd8bf589 */ "dll-reference dll_b2d9fd95b535cd8bf589"))("./node_modules/prop-types/checkPropTypes.js");
 
 /***/ }),
 
@@ -11369,12 +11349,12 @@ if (true) {
 
 /***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
 /*!*******************************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_831a3634f66cb1dada0c ***!
+  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_b2d9fd95b535cd8bf589 ***!
   \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_831a3634f66cb1dada0c */ "dll-reference dll_831a3634f66cb1dada0c"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_b2d9fd95b535cd8bf589 */ "dll-reference dll_b2d9fd95b535cd8bf589"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 /***/ }),
 
@@ -11589,12 +11569,12 @@ exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ "./node
 
 /***/ "./node_modules/react-dom/index.js":
 /*!***********************************************************************************************!*\
-  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_831a3634f66cb1dada0c ***!
+  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_b2d9fd95b535cd8bf589 ***!
   \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_831a3634f66cb1dada0c */ "dll-reference dll_831a3634f66cb1dada0c"))("./node_modules/react-dom/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_b2d9fd95b535cd8bf589 */ "dll-reference dll_b2d9fd95b535cd8bf589"))("./node_modules/react-dom/index.js");
 
 /***/ }),
 
@@ -13699,12 +13679,12 @@ module.exports = hoistNonReactStatics;
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_831a3634f66cb1dada0c ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_b2d9fd95b535cd8bf589 ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_831a3634f66cb1dada0c */ "dll-reference dll_831a3634f66cb1dada0c"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_b2d9fd95b535cd8bf589 */ "dll-reference dll_b2d9fd95b535cd8bf589"))("./node_modules/react/index.js");
 
 /***/ }),
 
@@ -23056,12 +23036,12 @@ module.exports = {
 
 /***/ "./node_modules/webpack/buildin/global.js":
 /*!******************************************************************************************************!*\
-  !*** delegated ./node_modules/webpack/buildin/global.js from dll-reference dll_831a3634f66cb1dada0c ***!
+  !*** delegated ./node_modules/webpack/buildin/global.js from dll-reference dll_b2d9fd95b535cd8bf589 ***!
   \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_831a3634f66cb1dada0c */ "dll-reference dll_831a3634f66cb1dada0c"))("./node_modules/webpack/buildin/global.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_b2d9fd95b535cd8bf589 */ "dll-reference dll_b2d9fd95b535cd8bf589"))("./node_modules/webpack/buildin/global.js");
 
 /***/ }),
 
@@ -23155,7 +23135,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Popup__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Popup */ "./components/Popup.js");
 /* harmony import */ var _components_Slides__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Slides */ "./components/Slides.js");
 /* harmony import */ var _components_Tooltip__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Tooltip */ "./components/Tooltip.js");
-var _jsxFileName = "F:\\1PROGRAMMING\\repositories\\2019\\Portolio-Compiled2\\pages\\index.js";
+var _jsxFileName = "C:\\Users\\mike\\Desktop\\alltheweb\\pages\\index.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -23197,7 +23177,7 @@ function (_Component) {
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Index).call(this, props));
     _this.state = {
       isPopActive: false,
-      slideInterval: 3000,
+      slideInterval: 5000,
       clickedSlide: ''
     }; //this.onSlideClick = this.onSlideClick.bind(this);
     //this.activatePop = this.activatePop.bind(this);
@@ -23211,6 +23191,9 @@ function (_Component) {
       /* Adaptive layout using Grid and percentages/fractions */
       var cont = document.querySelector('#container');
       var images = document.querySelectorAll('.images');
+      var x = 0,
+          y = 0,
+          z = 2;
 
       function windowChange() {
         //document.body.id = 'theBody';
@@ -23265,13 +23248,17 @@ function (_Component) {
       var camera, scene, renderer, light;
       init();
       animate();
+      var interval = setInterval(function (_) {
+        z += 0.01;
+        camera.position.set(x, y, z);
+      }, 100);
 
       function init() {
         container = document.createElement('div');
         var linkCont = document.body;
         linkCont.appendChild(container);
         camera = new THREE.PerspectiveCamera(47, window.innerWidth / window.innerHeight, 0.25, 100);
-        camera.position.set(0, 0, 10);
+        camera.position.set(x, y, z);
         controls = new THREE.OrbitControls(camera);
         controls.target.set(0, .5, 1);
         controls.update();
@@ -23305,12 +23292,14 @@ function (_Component) {
         renderer.gammaOutput = true;
         container.appendChild(renderer.domElement);
         window.addEventListener('resize', onWindowResize, false);
+        setTimeout(function (_) {}, 100);
       }
 
-      function onWindowResize() {
+      function onWindowResize(e) {
         camera.aspect = window.innerWidth / window.innerHeight;
         camera.updateProjectionMatrix();
         renderer.setSize(window.innerWidth, window.innerHeight);
+        e.preventDefault();
       } //
 
 
@@ -23318,27 +23307,7 @@ function (_Component) {
         requestAnimationFrame(animate);
         renderer.render(scene, camera);
       }
-    } // onSlideClick(id) {
-    //   /*setTimeout(()=>{
-    //     var theIfr = document.querySelector('#ifr');
-    //     console.log(theIfr)  
-    //     if(theIfr){
-    //       theIfr.style.backgroundImage = `url(static/gifs/loading2.gif?r=${new Date().getTime()})`
-    //     }
-    //   },1000)*/
-    //   this.setState({ 
-    //     isPopActive: !this.state.isPopActive,
-    //     slideInterval: false,
-    //     clickedSlide: id
-    //   })
-    // }
-    // activatePop(event) {
-    //   this.setState({ 
-    //     isPopActive: !this.state.isPopActive,
-    //     slideInterval: 3000
-    //   })
-    // }
-
+    }
   }, {
     key: "render",
     value: function render() {
@@ -23346,19 +23315,19 @@ function (_Component) {
         id: "container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 168
+          lineNumber: 149
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 169
+          lineNumber: 150
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("title", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 170
+          lineNumber: 151
         },
         __self: this
       }, "Portfolio"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
@@ -23366,7 +23335,7 @@ function (_Component) {
         content: "initial-scale=1.0, width=device-width",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 171
+          lineNumber: 152
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
@@ -23374,7 +23343,7 @@ function (_Component) {
         content: "Projects Compilation",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 173
+          lineNumber: 154
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
@@ -23382,7 +23351,7 @@ function (_Component) {
         content: "static/capture.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 174
+          lineNumber: 155
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
@@ -23390,7 +23359,7 @@ function (_Component) {
         content: "Website Capture Screen",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 175
+          lineNumber: 156
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
@@ -23398,7 +23367,7 @@ function (_Component) {
         content: "http://react-presentation.herokuapp.com/?or=cjnda",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 176
+          lineNumber: 157
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
@@ -23406,35 +23375,35 @@ function (_Component) {
         content: "#F0C869",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 177
+          lineNumber: 158
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         src: "static/3dmodel/three.js",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 178
+          lineNumber: 159
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         src: "static/3dmodel/OrbitControls.js",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 179
+          lineNumber: 160
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         src: "static/3dmodel/GLTFLoader.js",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 180
+          lineNumber: 161
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
         src: "static/3dmodel/WebGL.js",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 181
+          lineNumber: 162
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Slides__WEBPACK_IMPORTED_MODULE_6__["default"] // onSlideClick={this.onSlideClick} 
@@ -23443,71 +23412,7 @@ function (_Component) {
         order: this.props.router.query.or,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 186
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Popup__WEBPACK_IMPORTED_MODULE_5__["default"] //activatePop={this.activatePop} 
-      //isActive={this.state.isPopActive} 
-      , {
-        content: this.state.clickedSlide,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 190
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        id: "top",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 194
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Tooltip__WEBPACK_IMPORTED_MODULE_7__["default"], {
-        text: 'Drag or scroll this background',
-        position: 'left',
-        current: 'top',
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 195
-        },
-        __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        id: "left",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 200
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Tooltip__WEBPACK_IMPORTED_MODULE_7__["default"], {
-        text: 'Drag or scroll this background',
-        position: 'bottom',
-        current: 'left',
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 201
-        },
-        __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        id: "right",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 206
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Tooltip__WEBPACK_IMPORTED_MODULE_7__["default"], {
-        text: 'Drag or scroll this background',
-        position: 'bottom',
-        current: 'right',
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 207
-        },
-        __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        id: "bottom",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 212
+          lineNumber: 165
         },
         __self: this
       }));
@@ -23628,14 +23533,14 @@ return { page: module.exports.default }});
 
 /***/ }),
 
-/***/ "dll-reference dll_831a3634f66cb1dada0c":
+/***/ "dll-reference dll_b2d9fd95b535cd8bf589":
 /*!*******************************************!*\
-  !*** external "dll_831a3634f66cb1dada0c" ***!
+  !*** external "dll_b2d9fd95b535cd8bf589" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_831a3634f66cb1dada0c;
+module.exports = dll_b2d9fd95b535cd8bf589;
 
 /***/ })
 

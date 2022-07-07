@@ -69,7 +69,7 @@ class Slides extends Component {
     const order = this.props.order;
     if(order){
       for(var i=0; i<order.length; i++){
-        order[i] == 'a' ? arr.push(items[0]) :
+        order[i] == 'r' ? arr.push(items[0]) :
         order[i] == 'n' ? arr.push(items[1]) :
         order[i] == 'c' ? arr.push(items[2]) :
         order[i] == 'd' ? arr.push(items[3]) :
@@ -87,23 +87,13 @@ class Slides extends Component {
           onExiting={this.onExiting}
           onExited={this.onExited}
           key={item.src}>
-          <Tooltip 
-            position={'top'}
-            current={'img-' + item.name}
-            text={'Click to open the app'} />
-          <Tooltip
-            position={'bottom'}
-            current={'cap-' + item.name}
-            text={'Click to open the app'} />
-            
           <img
-            onClick={this.passId.bind(this,item.name)} 
             src={item.src}
             alt={item.altText}
             id={'img-' + item.name} 
             className={'images'}/>
           <div
-            onClick={this.passId.bind(this,item.name)}
+            
             id={'cap-' + item.name}>
             <CarouselCaption
               captionText={item.caption}
@@ -122,7 +112,6 @@ class Slides extends Component {
           pause={"hover"}
           ride={'carousel'}
         >
-
         {slides}
           <CarouselControl id="controlR" direction="prev" directionText="Previous" onClickHandler={this.previous} />
           <CarouselControl id="controlL" direction="next" directionText="Next" onClickHandler={this.next} />

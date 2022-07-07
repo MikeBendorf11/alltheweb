@@ -1,10 +1,10 @@
 const items = [
   {
-    name: 'a',
+    name: 'r',
     src: 'static/gifs/angular2.gif',
-    altText: 'Angular',
-    title: 'Angular',
-    caption: 'Typescript, Vue, Ionic, Axios',
+    altText: 'React',
+    title: 'React',
+    caption: 'Typescript, NextJs, Async',
     link: 'https://crypto-angular.herokuapp.com',
   },
   {
@@ -12,7 +12,7 @@ const items = [
     src: 'static/gifs/node2.gif',
     altText: 'Node',
     title: 'Node',
-    caption: 'MongoDB, Express, EJS, creating APIs',
+    caption: 'noSQL, Express, REST, Microservices',
     link: 'https://pizza-order-node.herokuapp.com'
   },
   {
@@ -28,14 +28,14 @@ const items = [
     src: 'static/gifs/design4.gif',
     altText: 'Design',
     title: 'Design',
-    caption: 'Responsive, Photoshop, 3d Modeling',
+    caption: 'Responsive, Scss, Sass',
     link: 'https://mb11.info/design/gallery.html'
   },
   {
     name: 'j',
     src: 'static/gifs/chapp2.gif',
     altText: 'Javascript',
-    caption: 'Async, ES6, Jquery, PWAs, Canvas, WebGL',
+    caption: 'PWAs, Canvas, WebGL',
     title: 'Javascript',
     link: 'https://mb11.info/chapp'
   }

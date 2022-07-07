@@ -13,18 +13,18 @@ class Index extends Component {
     super(props);
     this.state = { 
       isPopActive: false,
-      slideInterval: 3000,
+      slideInterval: 5000,
       clickedSlide: ''
      };
     //this.onSlideClick = this.onSlideClick.bind(this);
     //this.activatePop = this.activatePop.bind(this);
+    
   }
   componentDidMount(){
-    
-
     /* Adaptive layout using Grid and percentages/fractions */
     var cont = document.querySelector('#container');
     var images = document.querySelectorAll('.images');
+    var [x,y,z] = [0,0,2]
     function windowChange(){ 
       //document.body.id = 'theBody';
       var currentWidth = window.innerWidth;
@@ -85,12 +85,17 @@ class Index extends Component {
     var camera, scene, renderer, light;
     init();
     animate();
+    let interval = setInterval(_=>{
+       z+=0.01
+      camera.position.set( x,y,z );
+    },100)
+    
     function init() {
       container = document.createElement( 'div' );
       var linkCont = document.body
       linkCont.appendChild( container );
       camera = new THREE.PerspectiveCamera( 47, window.innerWidth / window.innerHeight, 0.25, 100 );
-      camera.position.set( 0, 0, 10 );
+      camera.position.set( x,y,z );
       controls = new THREE.OrbitControls( camera );
       controls.target.set( 0, .5, 1 );
       controls.update();
@@ -123,12 +128,13 @@ class Index extends Component {
       renderer.gammaOutput = true;
       container.appendChild( renderer.domElement );
       window.addEventListener( 'resize', onWindowResize, false );
-      
+      setTimeout(_=>{},100)
     }
-    function onWindowResize() {
+    function onWindowResize(e) {
       camera.aspect = window.innerWidth / window.innerHeight;
       camera.updateProjectionMatrix();
       renderer.setSize( window.innerWidth, window.innerHeight );
+      e.preventDefault()
     }
     //
     function animate() {
@@ -138,31 +144,6 @@ class Index extends Component {
     }
     
   }
-
-  // onSlideClick(id) {
-  //   /*setTimeout(()=>{
-  //     var theIfr = document.querySelector('#ifr');
-  //     console.log(theIfr)  
-  //     if(theIfr){
-  //       theIfr.style.backgroundImage = `url(static/gifs/loading2.gif?r=${new Date().getTime()})`
-  //     }
-  //   },1000)*/
-    
-  //   this.setState({ 
-  //     isPopActive: !this.state.isPopActive,
-  //     slideInterval: false,
-  //     clickedSlide: id
-  //   })
-  // }
-  
-  // activatePop(event) {
-    
-  //   this.setState({ 
-  //     isPopActive: !this.state.isPopActive,
-  //     slideInterval: 3000
-  //   })
-  // }
-
   render() {
     return (
       <div id="container">  
@@ -180,37 +161,11 @@ class Index extends Component {
           <script src="static/3dmodel/GLTFLoader.js"></script>
           <script src="static/3dmodel/WebGL.js"></script>
         </Head>
-        {/* <p>{this.props.router.query.or}</p> */}
-        {/* <div id='theBody'></div> */}
         
         <Slides 
           // onSlideClick={this.onSlideClick} 
           interval={this.state.slideInterval} 
           order={this.props.router.query.or}/>
-        <Popup 
-          //activatePop={this.activatePop} 
-          //isActive={this.state.isPopActive} 
-          content={this.state.clickedSlide}/>
-          <div id="top">
-          <Tooltip 
-            text={'Drag or scroll this background'}
-            position={'left'}
-            current={'top'}/>
-          </div>
-          <div id="left">
-            <Tooltip 
-              text={'Drag or scroll this background'}
-              position={'bottom'}
-              current={'left'}/>
-          </div>
-          <div id="right">
-            <Tooltip 
-              text={'Drag or scroll this background'}
-              position={'bottom'}
-              current={'right'}/> 
-          </div>
-          <div id="bottom"></div>
-
       </div>
 
     )
